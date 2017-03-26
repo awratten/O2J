@@ -21,6 +21,7 @@ $doc_title = "O2J";
 
         <?php
         echo "test again";
+        echo $doc_title;
         ?>
 
     </body>

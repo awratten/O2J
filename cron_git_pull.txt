@@ -2,4 +2,4 @@ crontab -e
 use nano - option 2
 add following to bottom of crontab
 
-* * * * * cd /var/www/html/O2J && git pull >> /dev/null
+* * * * * cd /var/www/html/MP_EarlyLearning && git pull >> /dev/null

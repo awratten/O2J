@@ -1,6 +1,6 @@
 <?php
 $doc_title = "O2J";
-$dov_version = "1";
+$doc_version = "1";
 /*
 
  */
@@ -24,7 +24,7 @@ $dov_version = "1";
         echo $doc_title;
 
         echo "<br>";
-        echo $doc_title;
+        echo $doc_version;
         ?>
 
     </body>

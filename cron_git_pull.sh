@@ -1,0 +1,1 @@
+* * * * * cd /var/www/html/O2J && git pull >> /dev/null

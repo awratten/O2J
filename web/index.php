@@ -1,10 +1,10 @@
 <?php
 $doc_title = "O2J";
-/*
- 
-*/
-?>
 
+/*
+
+ */
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,3 +25,4 @@ $doc_title = "O2J";
         ?>
 
     </body>
+</html>

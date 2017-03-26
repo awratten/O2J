@@ -19,12 +19,56 @@ $doc_version = "1";
     </head>
     <body>
 
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            Select image to upload:
-            <input type="file" name="fileToUpload" id="fileToUpload">
-            <input type="submit" value="Upload Image" name="submit">
-        </form>
-        
+        <div class="container" style="margin-top: 20px;">
+            <div class="row">
+
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <div class="jumbotron">
+                        <h1>Bootstrap File Input Demo</h1>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <h4>Standard Button</h4>
+                    <label class="btn btn-primary">
+                        Browse&hellip; <input type="file" style="display: none;">
+                    </label>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <h4>Block-level Button
+                        <label class="btn btn-block btn-primary">
+                            Browse&hellip; <input type="file" style="display: none;">
+                        </label>
+                </div>
+
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <h4>Button Groups</h4>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-default">Action 1</a>
+                        <a href="#" class="btn btn-default">Action 2</a>
+                        <label class="btn btn-primary">
+                            Browse&hellip; <input type="file" style="display: none;">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <h4>Input Groups</h4>
+                    <div class="input-group">
+                        <label class="input-group-btn">
+                            <span class="btn btn-primary">
+                                Browse&hellip; <input type="file" style="display: none;" multiple>
+                            </span>
+                        </label>
+                        <input type="text" class="form-control" readonly>
+                    </div>
+                    <span class="help-block">
+                        Try selecting one or more files and watch the feedback
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
         <?php
         echo "test again<br>";
         echo $doc_title;

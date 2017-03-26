@@ -20,7 +20,7 @@ $doc_version = "1";
     <body>
 
         <?php
-        echo "test again";
+        echo "test again<br>";
         echo $doc_title;
 
         echo "<br>";

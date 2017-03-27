@@ -31,7 +31,7 @@ if ($hash == '') {
 //header('Location: /index.php?error=1');      // On Error alert
 echo "Error Extracting Hash - No hash may be present or file type may be unsupported.";
 } else {
-    echo $hash;
+echo $hash;
 //header('Location: /index.php?hash='.$hash);      // On Error alert    
 }
 

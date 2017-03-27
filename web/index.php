@@ -92,11 +92,15 @@ $doc_version = "1";
                 </div>
             </div>
         </div>
-
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#HashModal').modal('show');
-            });
+        <?php
+        if (isset($_GET['hash'])) {
+            echo "<script type = 'text/javascript'>";
+            echo "$(document) . ready(function () {";
+            echo "$('#HashModal') . modal('show');";
+            echo "});";
+        }
         </script>
+
+    ?>
     </body>
 </html>

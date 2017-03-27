@@ -27,7 +27,7 @@ $doc_version = "1";
             <div class="center-content">
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                        <img style="margin-bottom: 45px;display: block;margin-left: auto;margin-right: auto;" src="/assets/logo-e160685033dac25d7ef1f5c24a745658.png" alt="Logo">
+                        <img style="margin-bottom: 45px;display: block;margin-left: auto;margin-right: auto;" src="http://placehold.it/200x64" alt="Logo">
                         <section class="panel bg-white no-b">
                             <ul class="switcher-dash-action">
                                 <li class="active"><a href="/login">Log in</a></li>

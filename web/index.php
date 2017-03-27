@@ -22,7 +22,10 @@ $doc_version = "1";
 
     </head>
     <body class="bg-primary" style="overflow-x: hidden;">
-
+        <label class="custom-file">
+            <input type="file" id="file" class="custom-file-input">
+            <span class="custom-file-control"></span>
+        </label>
         <div class="center-wrapper">
             <div class="center-content">
                 <div class="row">

@@ -27,7 +27,9 @@ function GetHash_doc($upath) {
     $output = "";
     exec("python /var/www/html/O2J/web/lib/office2john.py " . $upath . " 2>&1", $output);
     $hash = implode('', $output);
-    echo (string) $hash;
+    return (string) $hash;
 }
 
-GetHash_doc($uploadfile);
+$hash = GetHash_doc($uploadfile);
+
+header('Location: /index.php?hash=' . $hash);

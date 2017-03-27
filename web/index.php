@@ -5,6 +5,13 @@ $doc_version = "1";
 
  */
 ?>
+
+<?php 
+if (isset($_GET['hash'])) {
+    $hash = filter_input(INPUT_POST, 'hash', FILTER_SANITIZE_STRING);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -77,7 +84,7 @@ $doc_version = "1";
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>$office$*2013*100000*256*16*5b10af85c768fd17b4e3eed2bca29142*e72fd09e7b486a7c45258d494af6e9c3*e6685d953f0d735858fa8cf076a84bad02a1b22c93d0a49fa63cc11e8c99bfda</p>
+                                    <p><?php echo $hash ?></p>
                                 </div>
                             </div>
                         </div>

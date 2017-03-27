@@ -15,7 +15,37 @@ $doc_version = "1";
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="/css/main.css">
+        
+        <script>
+            $(function () {
 
+                // We can attach the `fileselect` event to all file inputs on the page
+                $(document).on('change', ':file', function () {
+                    var input = $(this),
+                            numFiles = input.get(0).files ? input.get(0).files.length : 1,
+                            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                    input.trigger('fileselect', [numFiles, label]);
+                });
+
+                // We can watch for our custom `fileselect` event like this
+                $(document).ready(function () {
+                    $(':file').on('fileselect', function (event, numFiles, label) {
+
+                        var input = $(this).parents('.input-group').find(':text'),
+                                log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+                        if (input.length) {
+                            input.val(log);
+                        } else {
+                            if (log)
+                                alert(log);
+                        }
+
+                    });
+                });
+
+            });
+        </script>
     </head>
     <body>
 
@@ -76,37 +106,6 @@ $doc_version = "1";
         echo "<br>";
         echo $doc_version;
         ?>
-        <script>
 
-            $(function () {
-
-                // We can attach the `fileselect` event to all file inputs on the page
-                $(document).on('change', ':file', function () {
-                    var input = $(this),
-                            numFiles = input.get(0).files ? input.get(0).files.length : 1,
-                            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-                    input.trigger('fileselect', [numFiles, label]);
-                });
-
-                // We can watch for our custom `fileselect` event like this
-                $(document).ready(function () {
-                    $(':file').on('fileselect', function (event, numFiles, label) {
-
-                        var input = $(this).parents('.input-group').find(':text'),
-                                log = numFiles > 1 ? numFiles + ' files selected' : label;
-
-                        if (input.length) {
-                            input.val(log);
-                        } else {
-                            if (log)
-                                alert(log);
-                        }
-
-                    });
-                });
-
-            });
-
-        </script>
     </body>
 </html>

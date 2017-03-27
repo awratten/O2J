@@ -47,10 +47,12 @@ $doc_version = "1";
                         <div class="card-block">
                             <form >
                                 <div class="form-group mb30">
-                                    <h3>Choose file to extract hash</h3>
+                                    <h4>Choose file to extract hash</h4>
                                 </div>
                                 <div class="form-group mb30">
-                                    <a href="#" onclick="$('#file-label').click()"><img src="img/cloud-hash.svg" style="height:80px;"></a>
+                                    <a href="#" onclick="$('#file-label').click()">
+                                        <img src="img/cloud-hash.svg" style="height:80px;">
+                                    </a>
                                 </div>
                                 <div class="form-group mb30">
                                     <label id="file-label" class="custom-file">
@@ -63,6 +65,17 @@ $doc_version = "1";
                         </div>
                     </div>
 
+                    <!-- Large modal -->
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <span>...</span>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <p class="text-center" style="margin-top: 30px">
                         Copyright ©
                         <span id="year" class="mr5"> 2017</span>

@@ -26,8 +26,9 @@ if (!is_file($uploadfile)) {
 }
 
 function GetHash_doc($upath) {
-    $exec = exec("python /var/www/html/office2john.py $upath ");
-    return $exec;
+    exec("python /var/www/html/office2john.py $upath ",$output);
+    $hash = (string) implode('', $output);
+    return $hash;
 }
 
 echo GetHash_doc($uploadfile);

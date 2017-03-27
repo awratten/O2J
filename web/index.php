@@ -27,7 +27,7 @@ $doc_version = "1";
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-6 mx-auto">
                     <img class="logo-img" src="http://placehold.it/200x64" alt="Logo">
 
                     <div class="card text-center">

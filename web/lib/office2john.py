@@ -1872,19 +1872,19 @@ def process_file(filename):
         f = open(filename, "rb")
         if f.read(2) == b"PK":
             sys.stderr.write("zip container found, file is " \
-                        "unencrypted?, invalid OLE file!\n" % filename)
+                        "unencrypted?, invalid OLE file!\n")
             f.close()
             return 1
         f.close()
 
         if not isOleFile(filename):
-            sys.stderr.write("Invalid OLE file\n" % filename)
+            sys.stderr.write("Invalid OLE file\n")
             return 1
     except Exception:
         e = sys.exc_info()[1]
         import traceback
         traceback.print_exc()
-        sys.stderr.write("OLE check failed, %s\n" % (filename, str(e)))
+        sys.stderr.write("OLE check failed, %s\n" % (str(e)))
         return 2
 
     # Open OLE file:
@@ -1957,7 +1957,7 @@ def process_file(filename):
     elif ["PowerPoint Document"] in ole.listdir():
         stream = "Current User"
     else:
-        sys.stderr.write("%s : No supported streams found\n" % filename)
+        sys.stderr.write("No supported streams found\n")
         return 2
 
     try:
@@ -1965,11 +1965,11 @@ def process_file(filename):
     except:
         import traceback
         traceback.print_exc()
-        sys.stderr.write("stream %s not found!\n" % (filename, stream))
+        sys.stderr.write("stream %s not found!\n" % stream)
         return 2
 
     if workbookStream is None:
-        sys.stderr.write("Error opening stream, %s\n" % filename)
+        sys.stderr.write("Error opening stream\n")
         (filename, stream)
         return 3
 

@@ -65,7 +65,7 @@ if (isset($_GET['hash'])) {
                             </ul>
                         </div>
                         <div class="card-block">
-                            <form >
+                            <form action="get_hash.php" method="post" enctype="multipart/form-data">
                                 <div class="form-group mb30">
                                     <h4>Choose file to extract hash</h4>
                                 </div>
@@ -75,15 +75,13 @@ if (isset($_GET['hash'])) {
                                     </a>
                                 </div>
                                 <div class="form-group mb30">
-                                    <form action="get_hash.php" method="post" enctype="multipart/form-data">
-                                        <label id="file-label" class="custom-file">
-                                            <input type="file" id="file" class="custom-file-input" accept=".pdf, .doc, .docx ,application/msword, .xls, .xlsx, application/vnd.ms-excel, .ppt , .pptx, application/vnd.ms-powerpoint">
-                                            <span class="custom-file-control"></span>
-                                        </label>
-                                        <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
-                                    </form>
+
+                                    <label id="file-label" class="custom-file">
+                                        <input type="file" id="file" class="custom-file-input" accept=".pdf, .doc, .docx ,application/msword, .xls, .xlsx, application/vnd.ms-excel, .ppt , .pptx, application/vnd.ms-powerpoint">
+                                        <span class="custom-file-control"></span>
+                                    </label>
                                 </div>
-                                
+                                <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
                             </form>
                         </div>
                     </div>

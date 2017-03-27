@@ -39,13 +39,16 @@ $doc_version = "1";
                                 <li class="nav-item">
                                     <a class="nav-link disabled" href="#">PDF</a>
                                 </li>
-                                <li class="nav-item pull-right">
+                                <li class="nav-item">
                                     <a class="nav-link" href="#">Downloads</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="card-block">
                             <form >
+                                <div class="form-group">
+                                    <h2>Choose file to extract hash</h2>
+                                </div>
                                 <div class="form-group">
                                     <a href="#" onclick="$('#file-label').click()"><img src="img/cloud-hash.svg" style="height:80px;"></a>
                                 </div>

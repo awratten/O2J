@@ -48,7 +48,7 @@ $doc_version = "1";
                                 </div>
                                 <div class="form-group">
                                     <label id="file-label" class="custom-file">
-                                        <input type="file" id="file" class="custom-file-input">
+                                        <input type="file" id="file" class="custom-file-input" accept=".pdf, .doc, .docx ,application/msword, .xls, .xlsx, application/vnd.ms-excel, .ppt , .pptx, application/vnd.ms-powerpoint">
                                         <span class="custom-file-control"></span>
                                     </label>
                                 </div>

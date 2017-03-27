@@ -44,10 +44,10 @@ $doc_version = "1";
                         <div class="card-block">
                             <form >
                                 <div class="form-group">
-                                    <i class="fa fa-cloud-upload upload-icon" aria-hidden="true"></i>
+                                    <a href="#" onclick="$('#file-label').click()"><i class="fa fa-cloud-upload upload-icon" aria-hidden="true"></i></a>
                                 </div>
                                 <div class="form-group">
-                                    <label class="custom-file">
+                                    <label id="file-label" class="custom-file">
                                         <input type="file" id="file" class="custom-file-input">
                                         <span class="custom-file-control"></span>
                                     </label>

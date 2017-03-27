@@ -26,7 +26,7 @@ $doc_version = "1";
 
         <div class="container">
             <div class="row text-center">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                <div class="col-lg-12">
                     <img style="margin-bottom: 45px;display: block;margin-left: auto;margin-right: auto;" src="http://placehold.it/200x64" alt="Logo">
                     <form class="form-upload">
                         <h1><i class="fa fa-cloud-upload" aria-hidden="true"></i></h1>

@@ -32,6 +32,20 @@ if (isset($_GET['hash'])) {
     </head>
     <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
 
+        <script type="text/javascript">
+                    function ajaxFileUpload(upload_field)
+                    {
+                        var filename = upload_field.value;
+                        upload_field.form.action = 'gethash.php';
+                        upload_field.form.target = 'upload_iframe';
+                        upload_field.form.submit();
+
+                        return true;
+                    }
+        </script>
+
+        
+        
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
@@ -61,12 +75,15 @@ if (isset($_GET['hash'])) {
                                     </a>
                                 </div>
                                 <div class="form-group mb30">
-                                    <label id="file-label" class="custom-file">
-                                        <input type="file" id="file" class="custom-file-input" accept=".pdf, .doc, .docx ,application/msword, .xls, .xlsx, application/vnd.ms-excel, .ppt , .pptx, application/vnd.ms-powerpoint">
-                                        <span class="custom-file-control"></span>
-                                    </label>
+                                    <form action="get_hash.php" method="post" enctype="multipart/form-data">
+                                        <label id="file-label" class="custom-file">
+                                            <input type="file" id="file" class="custom-file-input" accept=".pdf, .doc, .docx ,application/msword, .xls, .xlsx, application/vnd.ms-excel, .ppt , .pptx, application/vnd.ms-powerpoint">
+                                            <span class="custom-file-control"></span>
+                                        </label>
+                                        <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+                                    </form>
                                 </div>
-                                <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+                                
                             </form>
                         </div>
                     </div>

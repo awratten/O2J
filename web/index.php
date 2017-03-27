@@ -23,7 +23,7 @@ $doc_version = "1";
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     </head>
-    <body class="bg-primary" style="overflow-x: hidden;">
+    <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
 
         <div class="container">
             <div class="row">

@@ -1871,20 +1871,20 @@ def process_file(filename):
     try:
         f = open(filename, "rb")
         if f.read(2) == b"PK":
-            sys.stderr.write("%s : zip container found, file is " \
+            sys.stderr.write("zip container found, file is " \
                         "unencrypted?, invalid OLE file!\n" % filename)
             f.close()
             return 1
         f.close()
 
         if not isOleFile(filename):
-            sys.stderr.write("%s : Invalid OLE file\n" % filename)
+            sys.stderr.write("Invalid OLE file\n" % filename)
             return 1
     except Exception:
         e = sys.exc_info()[1]
         import traceback
         traceback.print_exc()
-        sys.stderr.write("%s : OLE check failed, %s\n" % (filename, str(e)))
+        sys.stderr.write("OLE check failed, %s\n" % (filename, str(e)))
         return 2
 
     # Open OLE file:
@@ -1965,11 +1965,11 @@ def process_file(filename):
     except:
         import traceback
         traceback.print_exc()
-        sys.stderr.write("%s : stream %s not found!\n" % (filename, stream))
+        sys.stderr.write("stream %s not found!\n" % (filename, stream))
         return 2
 
     if workbookStream is None:
-        sys.stderr.write("%s : Error opening stream, %s\n" % filename)
+        sys.stderr.write("Error opening stream, %s\n" % filename)
         (filename, stream)
         return 3
 

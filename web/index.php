@@ -9,7 +9,12 @@ $doc_version = "1";
 <?php 
 if (isset($_GET['hash'])) {
     $hash = $_GET['hash'];
-    $filter_hash = filter_input(INPUT_POST, 'hash', FILTER_SANITIZE_STRING);
+    // Remove HTML tags from string
+    $newstr = filter_var($hash, FILTER_SANITIZE_STRING);
+    echo $newstr;
+?>
+    
+    
 }
 ?>
 
@@ -92,7 +97,7 @@ if (isset($_GET['hash'])) {
                                     </p>
                                     <p>
                                         <?php
-                                            echo $filter_hash;
+                                            echo $newstr;
                                         ?>
                                     </p>
                                 </div>

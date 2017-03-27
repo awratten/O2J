@@ -39,11 +39,12 @@ if (isset($_GET['hash'])) {
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     </head>
+
     <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
-                    <img class="logo-img" src="http://placehold.it/200x64" alt="Logo">
+                    <img class="logo-img" src="img/o2j_logo.svg" alt="Logo">
                     <div class="card text-center">
                         <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs">

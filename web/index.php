@@ -49,7 +49,7 @@ $doc_version = "1";
                                         <span class="custom-file-control"></span>
                                     </label>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
 
                             </form>
                         </div>

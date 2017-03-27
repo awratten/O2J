@@ -3,4 +3,4 @@
 $uploaddir = '/var/www/html/uploads/';
 
 
-echo $_FILES['upload']['name'];
+echo $_FILES['file']['name'];

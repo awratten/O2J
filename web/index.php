@@ -37,7 +37,7 @@ $doc_version = "1";
                                     <a class="nav-link active" href="#">MS Office</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">PDF</a>
+                                    <a class="nav-link disabled" href="#">PDF</a>
                                 </li>
                             </ul>
                         </div>

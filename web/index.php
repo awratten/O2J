@@ -22,18 +22,22 @@ $doc_version = "1";
 
     </head>
     <body>
-        
+
         <div class="container">
             <div class="row">
                 <div class="col-md-8 text-center">
-                    <label class="custom-file">
-                        <input type="file" id="file" class="custom-file-input">
-                        <span class="custom-file-control"></span>
-                    </label>
+                    <form>
+                        <h1><i class="fa fa-cloud-upload" aria-hidden="true"></i></h1>
+
+                        <label class="custom-file">
+                            <input type="file" id="file" class="custom-file-input">
+                            <span class="custom-file-control"></span>
+                        </label>
+                    </form>
                 </div>
             </div>
         </div>
-        
+
         <?php
         echo "test again<br>";
         echo $doc_title;

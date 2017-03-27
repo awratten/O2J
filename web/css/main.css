@@ -13,19 +13,9 @@ and open the template in the editor.
     color: white;
 }
 
-.center-wrapper {
-    display: table;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    position: relative;
-}
 
-.center-wrapper .center-content {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    float: none;
-    z-index: 9999;
+.form-upload {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
 }

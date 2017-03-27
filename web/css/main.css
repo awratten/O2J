@@ -13,6 +13,19 @@ and open the template in the editor.
     color: white;
 }
 
+h1 {
+    color:  #5390FF;
+}
+h2 {
+    color:  #5390FF;
+}
+h3 {
+    color:  #5390FF;
+}
+h4 {
+    color:  #5390FF;
+}
+
 .form-upload  {
     max-width: 500px;
     padding: 15px;

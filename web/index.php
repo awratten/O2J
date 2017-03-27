@@ -44,6 +44,9 @@ $doc_version = "1";
                         <div class="card-block">
                             <form>
                                 <div class="form-group">
+                                    <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                </div>
+                                <div class="form-group">
                                     <label class="custom-file">
                                         <input type="file" id="file" class="custom-file-input">
                                         <span class="custom-file-control"></span>

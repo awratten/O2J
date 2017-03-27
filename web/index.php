@@ -42,10 +42,15 @@ $doc_version = "1";
                             </ul>
                         </div>
                         <div class="card-block">
-                            <label class="custom-file">
-                                <input type="file" id="file" class="custom-file-input">
-                                <span class="custom-file-control"></span>
-                            </label>
+                            <form>
+                                <label class="custom-file">
+                                    <input type="file" id="file" class="custom-file-input">
+                                    <span class="custom-file-control"></span>
+                                </label>
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+
+                            </form>
                         </div>
                     </div>
 

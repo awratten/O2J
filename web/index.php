@@ -84,7 +84,7 @@ $doc_version = "1";
                         </div>
                     </div>
                     
-                    <p class="text-center" style="margin-top: 30px">
+                    <p class="text-center" style="color:#fff;margin-top: 30px">
                         Copyright ©
                         <span id="year" class="mr5"> 2017</span>
                         <span>dsa</span>

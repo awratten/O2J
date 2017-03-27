@@ -93,11 +93,10 @@ $doc_version = "1";
             </div>
         </div>
 
-        
         <script type="text/javascript">
-    $(window).load(function(){
-        $('#HashModal').modal('show');
-    });
+            $(document).ready(function () {
+                $('#HashModal').modal('show');
+            });
         </script>
     </body>
 </html>

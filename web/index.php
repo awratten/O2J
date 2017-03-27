@@ -6,7 +6,7 @@ $doc_version = "1";
  */
 ?>
 
-<?php 
+<?php
 if (isset($_GET['hash'])) {
     $filter_hash = filter_input(INPUT_GET, 'hash', FILTER_SANITIZE_STRING);
 }
@@ -18,7 +18,7 @@ if (isset($_GET['hash'])) {
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title><?php echo $doc_title; ?></title>
-        
+
         <link rel="apple-touch-icon" sizes="180x180" href="favicon//apple-touch-icon.png">
         <link rel="icon" type="image/png" href="favicon//favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="favicon//favicon-16x16.png" sizes="16x16">
@@ -29,11 +29,11 @@ if (isset($_GET['hash'])) {
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="/css/main.css">
-        
+
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        
+
         <script src="js/clipboard.min.js" type="text/javascript"></script>
-        
+
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -52,7 +52,7 @@ if (isset($_GET['hash'])) {
                                     <a class="nav-link active" href="#">MS Office</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled" href="#">PDF</a>
+                                    <a class="nav-link disabled" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#"><i class="fa fa-download"></i></a>
@@ -92,7 +92,7 @@ if (isset($_GET['hash'])) {
                                 </div>
                                 <div class="modal-body">
                                     <!-- Target -->
-                                    <textarea id="hashTextArea" style="width:100%;"><?php echo $filter_hash;?></textarea>
+                                    <textarea id="hashTextArea" style="width:100%;"><?php echo $filter_hash; ?></textarea>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-primary" data-clipboard-target="#hashTextArea">Copy</button>
@@ -100,16 +100,16 @@ if (isset($_GET['hash'])) {
                             </div>
                         </div>
                     </div>
-                    
+
                     <p class="text-center" style="color:#fff;margin-top: 30px">
                         Copyright ©
-                        <span id="year" class="mr5"> 2017</span>
-                        <span>dsa</span>
+                        <span id="year"> 2017</span>
+                        <span></span>
                     </p>
                 </div>
             </div>
         </div>
-        
+
         <?php
         if (isset($_GET['hash'])) {
             echo "<script type = 'text/javascript'>";
@@ -119,13 +119,13 @@ if (isset($_GET['hash'])) {
             echo "</script>";
         }
         ?>
-        
+
         <script>
             var clipboard = new Clipboard('.btn');
-            clipboard.on('success', function(e) {
+            clipboard.on('success', function (e) {
                 console.log(e);
             });
-            clipboard.on('error', function(e) {
+            clipboard.on('error', function (e) {
                 console.log(e);
             });
         </script>

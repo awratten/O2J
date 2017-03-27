@@ -44,7 +44,7 @@ if (isset($_GET['hash'])) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
-                    <img class="logo-img" src="img/o2j_logo.svg" alt="Logo">
+                    <a href="/index.php"><img class="logo-img" src="img/o2j_logo.svg" alt="Logo"></a>
                     <div class="card text-center">
                         <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs">

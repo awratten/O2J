@@ -27,7 +27,7 @@ $doc_version = "1";
             <div class="center-content">
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-
+                        <img style="margin-bottom: 45px;display: block;margin-left: auto;margin-right: auto;" src="http://placehold.it/200x64" alt="Logo">
                         <form>
                             <h1><i class="fa fa-cloud-upload" aria-hidden="true"></i></h1>
                             <label class="custom-file">
@@ -40,7 +40,7 @@ $doc_version = "1";
                 </div>
             </div>
         </div>
-        
+
         <?php
         echo "test again<br>";
         echo $doc_title;

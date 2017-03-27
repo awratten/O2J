@@ -46,13 +46,13 @@ $doc_version = "1";
                         </div>
                         <div class="card-block">
                             <form >
-                                <div class="form-group" style="margin-bottom: 15px;">
+                                <div class="form-group">
                                     <h3>Choose file to extract hash</h3>
                                 </div>
-                                <div class="form-group" style="margin-bottom: 15px;">
+                                <div class="form-group">
                                     <a href="#" onclick="$('#file-label').click()"><img src="img/cloud-hash.svg" style="height:80px;"></a>
                                 </div>
-                                <div class="form-group" style="margin-bottom: 15px;">
+                                <div class="form-group">
                                     <label id="file-label" class="custom-file">
                                         <input type="file" id="file" class="custom-file-input" accept=".pdf, .doc, .docx ,application/msword, .xls, .xlsx, application/vnd.ms-excel, .ppt , .pptx, application/vnd.ms-powerpoint">
                                         <span class="custom-file-control"></span>
@@ -63,10 +63,10 @@ $doc_version = "1";
                         </div>
                     </div>
 
-                    <p class="text-center">
+                    <p class="text-center" style="margin-top: 30px">
                         Copyright ©
                         <span id="year" class="mr5"> 2017</span>
-                        <span>Selly LLC</span>
+                        <span>dsa</span>
                     </p>
                 </div>
             </div>

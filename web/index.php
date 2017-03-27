@@ -23,7 +23,7 @@ $doc_version = "1";
     </head>
     <body class="bg-primary" style="overflow-x: hidden;">
 
-        <div class="container">
+        <div class="center-wrapper">
             <div class="center-content">
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">

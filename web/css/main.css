@@ -37,3 +37,9 @@ body {
     color:#5390FF;
     font-size:62pt;
 }
+.logo-img {
+    margin-bottom: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -27,8 +27,8 @@ $doc_version = "1";
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <img style="margin-bottom: 45px;display: block;margin-left: auto;margin-right: auto;" src="http://placehold.it/200x64" alt="Logo">
+                <div class="col-lg-8 mx-auto">
+                    <img class="logo-img" src="http://placehold.it/200x64" alt="Logo">
 
                     <div class="card text-center">
                         <div class="card-header">
@@ -42,18 +42,15 @@ $doc_version = "1";
                             </ul>
                         </div>
                         <div class="card-block">
-                            <form>
-                                <div class="form-group">
-                                    <i class="fa fa-cloud-upload upload-icon" aria-hidden="true"></i>
-                                </div>
+                            <form >
                                 <div class="form-group">
                                     <label class="custom-file">
+                                        <i class="fa fa-cloud-upload upload-icon" aria-hidden="true"></i>
                                         <input type="file" id="file" class="custom-file-input">
                                         <span class="custom-file-control"></span>
                                     </label>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-block">Submit</button>
-
                             </form>
                         </div>
                     </div>

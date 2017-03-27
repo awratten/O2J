@@ -8,8 +8,9 @@ $doc_version = "1";
 
 <?php 
 if (isset($_GET['hash'])) {
-    $hash = $_GET['hash'];
-    $filter_hash = filter_var($hash, FILTER_SANITIZE_STRING);
+    $filter_hash = filter_input(INPUT_GET, 'hash', FILTER_SANITIZE_STRING);
+    //$hash = $_GET['hash'];
+    //$filter_hash = filter_var($hash, FILTER_SANITIZE_STRING);
 }
 ?>
 

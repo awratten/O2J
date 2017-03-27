@@ -5,7 +5,6 @@ $doc_version = "1";
 
  */
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -28,13 +27,19 @@ $doc_version = "1";
             <div class="row text-center">
                 <div class="col-lg-12">
                     <img style="margin-bottom: 45px;display: block;margin-left: auto;margin-right: auto;" src="http://placehold.it/200x64" alt="Logo">
+
                     <form class="form-upload">
-                        <h1><i class="fa fa-cloud-upload" aria-hidden="true"></i></h1>
+                        <i class="fa fa-cloud-upload fa-6" aria-hidden="true"></i>
                         <label class="custom-file">
                             <input type="file" id="file" class="custom-file-input">
                             <span class="custom-file-control"></span>
                         </label>
                     </form>
+
+                </div>
+                <div>
+
+
                 </div>
             </div>
         </div>

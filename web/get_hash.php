@@ -1,6 +1,5 @@
 <?php
+$date = (new \DateTime())->format('Y-m-d H:i:s');
+$uploaddir = '/var/www/html/O2J/web/uploads/';
 
-$uploaddir = '/var/www/html/uploads/';
-
-echo basename($_FILES["file"]["name"]);
-
+$uploadfile = $uploaddir . basename($_FILES['upload']['name']);

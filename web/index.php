@@ -60,7 +60,7 @@ if (isset($_GET['hash'])) {
                                     <a class="nav-link disabled" href="#">PDF</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Downloads</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-download"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -77,7 +77,7 @@ if (isset($_GET['hash'])) {
                                 <div class="form-group mb30">
 
                                     <label id="file-label" class="custom-file">
-                                        <input type="file" id="file" name="file" class="custom-file-input" accept=".pdf, .doc, .docx ,application/msword, .xls, .xlsx, application/vnd.ms-excel, .ppt , .pptx, application/vnd.ms-powerpoint">
+                                        <input type="file" id="upload" name="upload" class="custom-file-input" accept=".pdf, .doc, .docx ,application/msword, .xls, .xlsx, application/vnd.ms-excel, .ppt , .pptx, application/vnd.ms-powerpoint">
                                         <span class="custom-file-control"></span>
                                     </label>
                                 </div>

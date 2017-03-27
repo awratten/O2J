@@ -28,7 +28,6 @@ $doc_version = "1";
                 <div class="col-md-8 text-center">
                     <form>
                         <h1><i class="fa fa-cloud-upload" aria-hidden="true"></i></h1>
-
                         <label class="custom-file">
                             <input type="file" id="file" class="custom-file-input">
                             <span class="custom-file-control"></span>

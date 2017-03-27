@@ -44,7 +44,7 @@ $doc_version = "1";
                         <div class="card-block">
                             <form >
                                 <div class="form-group">
-                                    <a href="#" onclick="$('#file-label').click()"><img src="img/cloud-hash.svg"></a>
+                                    <a href="#" onclick="$('#file-label').click()"><img src="img/cloud-hash.svg" style="height:80px;"></a>
                                 </div>
                                 <div class="form-group">
                                     <label id="file-label" class="custom-file">

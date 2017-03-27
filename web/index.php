@@ -40,7 +40,6 @@ if (isset($_GET['hash'])) {
 
     </head>
     <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
-
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
@@ -55,7 +54,10 @@ if (isset($_GET['hash'])) {
                                     <a class="nav-link disabled" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-download"></i></a>
+                                    <a class="nav-link" href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#HelpModal"><i class="fa fa-question" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -96,6 +98,28 @@ if (isset($_GET['hash'])) {
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-primary" data-clipboard-target="#hashTextArea">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal fade bd-example-modal-lg" id="HelpModal" tabindex="-1" role="dialog" aria-labelledby="HelpModal" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Help</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                    Office2John.online extract the cryptographic
+                                    hash from Microsoft Office Files. The
+                                    extracted hash is ready to be inserted into
+                                    password cracking tools such as Hashcat or
+                                    John the Ripper.
+                                    </p>
                                 </div>
                             </div>
                         </div>

@@ -12,92 +12,21 @@ $doc_version = "1";
         <meta charset="utf-8">
         <title><?php echo $doc_title; ?></title>
 
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         
-        <script>
-            $(function () {
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-                // We can attach the `fileselect` event to all file inputs on the page
-                $(document).on('change', ':file', function () {
-                    var input = $(this),
-                            numFiles = input.get(0).files ? input.get(0).files.length : 1,
-                            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-                    input.trigger('fileselect', [numFiles, label]);
-                });
-
-                // We can watch for our custom `fileselect` event like this
-                $(document).ready(function () {
-                    $(':file').on('fileselect', function (event, numFiles, label) {
-
-                        var input = $(this).parents('.input-group').find(':text'),
-                                log = numFiles > 1 ? numFiles + ' files selected' : label;
-
-                        if (input.length) {
-                            input.val(log);
-                        } else {
-                            if (log)
-                                alert(log);
-                        }
-
-                    });
-                });
-
-            });
-        </script>
     </head>
     <body>
 
-        <div class="container" style="margin-top: 20px;">
-            <div class="row">
-
-                <div class="col-lg-6 col-sm-6 col-12">
-                    <div class="jumbotron">
-                        <h1>Bootstrap File Input Demo</h1>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-sm-6 col-12">
-                    <h4>Standard Button</h4>
-                    <label class="btn btn-primary">
-                        Browse&hellip; <input type="file" style="display: none;">
-                    </label>
-                </div>
-                <div class="col-lg-6 col-sm-6 col-12">
-                    <h4>Block-level Button
-                        <label class="btn btn-block btn-primary">
-                            Browse&hellip; <input type="file" style="display: none;">
-                        </label>
-                </div>
-
-                <div class="col-lg-6 col-sm-6 col-12">
-                    <h4>Button Groups</h4>
-                    <div class="btn-group">
-                        <a href="#" class="btn btn-default">Action 1</a>
-                        <a href="#" class="btn btn-default">Action 2</a>
-                        <label class="btn btn-primary">
-                            Browse&hellip; <input type="file" style="display: none;">
-                        </label>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6 col-12">
-                    <h4>Input Groups</h4>
-                    <div class="input-group">
-                        <label class="input-group-btn">
-                            <span class="btn btn-primary">
-                                Browse&hellip; <input type="file" style="display: none;" multiple>
-                            </span>
-                        </label>
-                        <input type="text" class="form-control" readonly>
-                    </div>
-                    <span class="help-block">
-                        Try selecting one or more files and watch the feedback
-                    </span>
-                </div>
-
-            </div>
-        </div>
+        <label class="custom-file">
+            <input type="file" id="file" class="custom-file-input">
+            <span class="custom-file-control"></span>
+        </label>
 
         <?php
         echo "test again<br>";

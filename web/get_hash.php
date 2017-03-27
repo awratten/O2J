@@ -11,9 +11,7 @@ function Filter_FileName($fname) {
 }
 
 $filename = Filter_FileName(basename($_FILES['upload']['name']));
-
 $uploadfile = $uploaddir . $filename;
-
 
 if (!is_file($uploadfile)) {
     move_uploaded_file($_FILES['upload']['tmp_name'], $uploadfile);
@@ -27,7 +25,7 @@ if (!is_file($uploadfile)) {
 
 function GetHash_doc($upath) {
     $output = "";
-    exec("python /var/www/html/office2john.py ".$upath." 2>&1", $output);
+    exec("python /var/www/html/office2john.py " . $upath . " 2>&1", $output);
     $hash = implode('', $output);
     echo (string) $hash;
 }
@@ -35,4 +33,3 @@ function GetHash_doc($upath) {
 GetHash_doc($uploadfile);
 echo $filename;
 echo $uploadfile;
-

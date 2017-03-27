@@ -25,6 +25,8 @@ if (isset($_GET['hash'])) {
         
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         
+        <script src="js/clipboard.min.js" type="text/javascript"></script>
+        
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -32,20 +34,6 @@ if (isset($_GET['hash'])) {
     </head>
     <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
 
-        <script type="text/javascript">
-                    function ajaxFileUpload(upload_field)
-                    {
-                        var filename = upload_field.value;
-                        upload_field.form.action = 'gethash.php';
-                        upload_field.form.target = 'upload_iframe';
-                        upload_field.form.submit();
-
-                        return true;
-                    }
-        </script>
-
-        
-        
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
@@ -124,5 +112,15 @@ if (isset($_GET['hash'])) {
             echo "</script>";
         }
         ?>
+        
+        <script>
+            var clipboard = new Clipboard('.btn');
+            clipboard.on('success', function(e) {
+                console.log(e);
+            });
+            clipboard.on('error', function(e) {
+                console.log(e);
+            });
+        </script>
     </body>
 </html>

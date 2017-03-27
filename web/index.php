@@ -12,9 +12,6 @@ if (isset($_GET['hash'])) {
     // Remove HTML tags from string
     $newstr = filter_var($hash, FILTER_SANITIZE_STRING);
     echo $newstr;
-?>
-    
-    
 }
 ?>
 

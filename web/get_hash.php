@@ -1,6 +1,7 @@
 <?php
 
-$date = (new \DateTime())->format('Y-m-d H:i:s');
+$date = (new \DateTime())->format('Y-m-d H:i:s');   //for mysql
+
 $uploaddir = '/var/www/html/O2J/web/uploads/';
 
 function Filter_FileName($fname) {
@@ -24,8 +25,9 @@ if (!is_file($uploadfile)) {
     move_uploaded_file($_FILES['upload']['tmp_name'], $newname);
 }
 
-echo $filename;
-echo "<br>";
-echo $uploaddir;
-echo "<br>";
-echo $date;
+function GetHash_doc($upath) {
+    $exec = exec("python /var/www/html/office2john.py $upath ");
+    return $exec;
+}
+
+echo GetHash_doc($uploadfile);

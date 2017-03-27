@@ -40,7 +40,7 @@ $doc_version = "1";
                                     <a class="nav-link disabled" href="#">PDF</a>
                                 </li>
                                 <li class="nav-item pull-right">
-                                    <a class="nav-link disabled" href="#">PDF</a>
+                                    <a class="nav-link" href="#">Downloads</a>
                                 </li>
                             </ul>
                         </div>

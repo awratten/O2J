@@ -8,6 +8,7 @@ and open the template in the editor.
     Author     : Anthony.Wratten
 */
 
-body {
+.bg-primary {
     background-color: #5390FF;
+    color: white;
 }

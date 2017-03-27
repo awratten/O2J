@@ -84,7 +84,7 @@ if (isset($_GET['hash'])) {
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p><?php echo $hash ?></p>
+                                    <p><?php echo $hash; ?></p>
                                 </div>
                             </div>
                         </div>

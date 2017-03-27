@@ -54,36 +54,36 @@ $doc_version = "1";
                                     <div style="text-align:center;margin-left:auto;margin-right:auto;width: 304px;">
                                         <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
                                         <div data-sitekey="6LdtagMTAAAAAML2ZhXuuDxZ-PQcvAlbNqsnd3Oz" class="g-recaptcha "><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LdtagMTAAAAAML2ZhXuuDxZ-PQcvAlbNqsnd3Oz&amp;co=aHR0cHM6Ly9zZWxseS5nZzo0NDM.&amp;hl=en&amp;v=r20170315121834&amp;size=normal&amp;cb=nv4lh6pmd2lo" title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no" name="undefined"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
-
-</div>
-<br>
-<div class="actions">
-<button name="commit" type="submit" class="btn btn-primary btn-lg btn-block" data-disable-with="<div class=&quot;loading&quot;></div">Sign in</button>
-</div>
-</form> <div class="mt5">
-<a style="color: #9B9B9B;" href="/users/password/new">Forgot your password?</a>
-<a style="color: #9B9B9B;float: right" href="/users/confirmation/new">Didn't receive confirmation instructions?</a>
-</div>
-</div>
-</section>
-<p class="text-center">
-Copyright ©
-<span id="year" class="mr5"> 2017</span>
-<span>Selly LLC</span>
-</p>
-</div>
-</div>
-</div>
-</div>
+                                    </div>
+                                    <br>
+                                    <div class="actions">
+                                        <button name="commit" type="submit" class="btn btn-primary btn-lg btn-block" data-disable-with="<div class=&quot;loading&quot;></div">Sign in</button>
+                                    </div>
+                                </form>
+                                <div class="mt5">
+                                    <a style="color: #9B9B9B;" href="/users/password/new">Forgot your password?</a>
+                                    <a style="color: #9B9B9B;float: right" href="/users/confirmation/new">Didn't receive confirmation instructions?</a>
+                                </div>
+                            </div>
+                        </section>
+                        <p class="text-center">
+                            Copyright ©
+                            <span id="year" class="mr5"> 2017</span>
+                            <span>Selly LLC</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    <?php
-    echo "test again<br>";
-    echo $doc_title;
 
-    echo "<br>";
-    echo $doc_version;
-    ?>
+        <?php
+        echo "test again<br>";
+        echo $doc_title;
+
+        echo "<br>";
+        echo $doc_version;
+        ?>
 
     </body>
 </html>

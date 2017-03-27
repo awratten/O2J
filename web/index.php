@@ -39,6 +39,9 @@ $doc_version = "1";
                                 <li class="nav-item">
                                     <a class="nav-link disabled" href="#">PDF</a>
                                 </li>
+                                <li class="nav-item pull-right">
+                                    <a class="nav-link disabled" href="#">PDF</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="card-block">
@@ -65,16 +68,5 @@ $doc_version = "1";
                 </div>
             </div>
         </div>
-
-
-
-        <?php
-        echo "test again<br>";
-        echo $doc_title;
-
-        echo "<br>";
-        echo $doc_version;
-        ?>
-
     </body>
 </html>

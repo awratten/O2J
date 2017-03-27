@@ -58,3 +58,6 @@ body {
     margin-right: auto;
 }
 
+.modal-body p {
+    word-wrap: break-word;
+}

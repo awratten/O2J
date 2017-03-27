@@ -46,13 +46,13 @@ $doc_version = "1";
                         </div>
                         <div class="card-block">
                             <form >
-                                <div class="form-group">
+                                <div class="form-group mb30">
                                     <h3>Choose file to extract hash</h3>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group mb30">
                                     <a href="#" onclick="$('#file-label').click()"><img src="img/cloud-hash.svg" style="height:80px;"></a>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group mb30">
                                     <label id="file-label" class="custom-file">
                                         <input type="file" id="file" class="custom-file-input" accept=".pdf, .doc, .docx ,application/msword, .xls, .xlsx, application/vnd.ms-excel, .ppt , .pptx, application/vnd.ms-powerpoint">
                                         <span class="custom-file-control"></span>

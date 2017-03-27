@@ -8,7 +8,8 @@ $doc_version = "1";
 
 <?php 
 if (isset($_GET['hash'])) {
-    $hash = filter_input(INPUT_POST, 'hash', FILTER_FLAG_ENCODE_HIGH);
+//    $hash = filter_input(INPUT_POST, 'hash', FILTER_FLAG_ENCODE_HIGH);
+    $hash = $_GET['hash'];
 }
 ?>
 
@@ -84,7 +85,11 @@ if (isset($_GET['hash'])) {
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p><?php echo $hash; ?></p>
+                                    <p>
+                                        <?php
+                                            echo $hash;
+                                        ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>

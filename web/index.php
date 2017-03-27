@@ -85,11 +85,10 @@ if (isset($_GET['hash'])) {
                                 </div>
                                 <div class="modal-body">
                                     <!-- Target -->
-                                    <textarea id="bar"><?php echo $filter_hash;?>.</textarea>
-                                    <!-- Trigger -->
-                                    <button class="btn" data-clipboard-target="#bar">
-                                        Copy
-                                    </button>
+                                    <textarea id="hashTextArea" style="width:100%;"><?php echo $filter_hash;?></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-clipboard-target="#hashTextArea">Copy</button>
                                 </div>
                             </div>
                         </div>

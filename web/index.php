@@ -9,9 +9,7 @@ $doc_version = "1";
 <?php 
 if (isset($_GET['hash'])) {
     $hash = $_GET['hash'];
-    // Remove HTML tags from string
-    $newstr = filter_var($hash, FILTER_SANITIZE_STRING);
-    echo $newstr;
+    $filter_hash = filter_var($hash, FILTER_SANITIZE_STRING);
 }
 ?>
 
@@ -89,12 +87,7 @@ if (isset($_GET['hash'])) {
                                 <div class="modal-body">
                                     <p>
                                         <?php
-                                            echo $hash;
-                                        ?>
-                                    </p>
-                                    <p>
-                                        <?php
-                                            echo $newstr;
+                                            echo $filter_hash;
                                         ?>
                                     </p>
                                 </div>

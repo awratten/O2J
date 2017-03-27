@@ -2,5 +2,5 @@
 
 $uploaddir = '/var/www/html/uploads/';
 
+echo basename($_FILES["file"]["name"]);
 
-echo $_FILES['file']['name'];

@@ -65,17 +65,9 @@ $doc_version = "1";
                         </div>
                     </div>
 
-                    
                     <!-- Large modal -->
                     <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-                    
-                    <p class="text-center" style="color:#fff;margin-top: 30px">
-                        Copyright ©
-                        <span id="year" class="mr5"> 2017</span>
-                        <span>dsa</span>
-                    </p>
-                </div>
-                <div class="col-lg-8">
+
                     <div class="modal fade bd-example-modal-lg" id="HashModal" tabindex="-1" role="dialog" aria-labelledby="HashModal" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
@@ -86,11 +78,17 @@ $doc_version = "1";
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    $office$*2013*100000*256*16*5b10af85c768fd17b4e3eed2bca29142*e72fd09e7b486a7c45258d494af6e9c3*e6685d953f0d735858fa8cf076a84bad02a1b22c93d0a49fa63cc11e8c99bfda
+                                    <p>$office$*2013*100000*256*16*5b10af85c768fd17b4e3eed2bca29142*e72fd09e7b486a7c45258d494af6e9c3*e6685d953f0d735858fa8cf076a84bad02a1b22c93d0a49fa63cc11e8c99bfda</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <p class="text-center" style="color:#fff;margin-top: 30px">
+                        Copyright ©
+                        <span id="year" class="mr5"> 2017</span>
+                        <span>dsa</span>
+                    </p>
                 </div>
             </div>
         </div>

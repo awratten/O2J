@@ -23,27 +23,24 @@ $doc_version = "1";
     </head>
     <body class="bg-primary" style="overflow-x: hidden;">
 
-        <div class="center-content">
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+        <div class="content-wrapper">
+            <div class="center-content">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
 
+                        <form>
+                            <h1><i class="fa fa-cloud-upload" aria-hidden="true"></i></h1>
+                            <label class="custom-file">
+                                <input type="file" id="file" class="custom-file-input">
+                                <span class="custom-file-control"></span>
+                            </label>
+                        </form>
 
-
-                    <form>
-                        <h1><i class="fa fa-cloud-upload" aria-hidden="true"></i></h1>
-                        <label class="custom-file">
-                            <input type="file" id="file" class="custom-file-input">
-                            <span class="custom-file-control"></span>
-                        </label>
-                    </form>
-
-
-
-
+                    </div>
                 </div>
             </div>
         </div>
-
+        
         <?php
         echo "test again<br>";
         echo $doc_title;

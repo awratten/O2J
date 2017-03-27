@@ -9,8 +9,6 @@ $doc_version = "1";
 <?php 
 if (isset($_GET['hash'])) {
     $filter_hash = filter_input(INPUT_GET, 'hash', FILTER_SANITIZE_STRING);
-    //$hash = $_GET['hash'];
-    //$filter_hash = filter_var($hash, FILTER_SANITIZE_STRING);
 }
 ?>
 
@@ -73,9 +71,6 @@ if (isset($_GET['hash'])) {
                         </div>
                     </div>
 
-                    <!-- Large modal -->
-                    <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-
                     <div class="modal fade bd-example-modal-lg" id="HashModal" tabindex="-1" role="dialog" aria-labelledby="HashModal" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
@@ -104,6 +99,7 @@ if (isset($_GET['hash'])) {
                 </div>
             </div>
         </div>
+        
         <?php
         if (isset($_GET['hash'])) {
             echo "<script type = 'text/javascript'>";

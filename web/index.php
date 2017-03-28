@@ -77,7 +77,7 @@ if (isset($_GET['error'])) {
                                 </div>
                                 <?php
                                 if ($error) {
-                                    echo "<div class='form-group'> <strong>Error:</strong>" . $error . "</div>";
+                                    echo "<div class='form-group alert alert-warning'> <strong>Error:</strong>" . $error . "</div>";
                                 }
                                 ?>
                                 <div class="form-group mb30">

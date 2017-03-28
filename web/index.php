@@ -42,11 +42,7 @@ if (isset($_GET['hash'])) {
 
     <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
         
-        <?php
-        if (isset($_GET['error'])) {
-            echo '<div id="alert" class="alert alert-success alert-dismissable top-alert text-center fade in" role="alert" data-dismiss="alert"><button type="button" class="close" data-dismiss="alert">×</button><strong>Error:</strong>' . $_GET['error'] . '</div>';
-        }
-        ?>
+        
 
         <div class="container">
             <div class="row">
@@ -74,6 +70,11 @@ if (isset($_GET['hash'])) {
                                 <div class="form-group mb30">
                                     <h4>Choose file to extract hash</h4>
                                 </div>
+                                <?php
+                                if (isset($_GET['error'])) {
+                                    echo "<div class='form-group'> <strong>Error:</strong>" . $_GET['error'] . "</div>";
+                                }
+                                ?>
                                 <div class="form-group mb30">
                                     <a href="#" onclick="$('#file-label').click()">
                                         <img src="img/cloud-hash.svg" style="height:80px;">

@@ -80,7 +80,7 @@ if (isset($_GET['hash'])) {
                                         <span class="custom-file-control"></span>
                                     </label>
                                 </div>
-                                <button type="submit" class="btn btn-lg btn-primary btn-block" onclick="ga('send', 'event', 'button', 'click','Submit_office');">Submit</button>
+                                <button type="submit" class="btn btn-lg btn-primary btn-block" onclick="ga('send', 'event', 'button', 'click','Submit_office');">Extract Hash</button>
                             </form>
                         </div>
                     </div>

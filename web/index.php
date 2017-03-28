@@ -57,7 +57,7 @@ if (isset($_GET['hash'])) {
                                     <a class="nav-link disabled" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','PDF_button');"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-download" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','Download_Button');"></i></a>
+                                    <a class="nav-link" href="/downloads"><i class="fa fa-download" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','Download_Button');"></i></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#" data-toggle="modal" data-target="#HelpModal" onclick="ga('send', 'event', 'button', 'click','Help_Modal');"><i class="fa fa-question" aria-hidden="true"></i></a>

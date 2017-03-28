@@ -30,17 +30,15 @@ if (!is_file($uploadfile)) {
 
 function GetHash_doc($upath) {
     $output = "";
-    exec("python /var/www/html/O2J/web/lib/office2john.py " . $upath . " 2>&1", $output);
+    //exec("python /var/www/html/O2J/web/lib/office2john.py " . $upath . " 2>&1", $output);
+    exec("python /var/www/html/O2J/web/lib/office2john.py " . $upath, $output);
     $hash = implode('', $output);
     return (string) $hash;
 }
 
 $hash = GetHash_doc($uploadfile);
 
-if (strpos($hash, 'office') !== false) {
-
-    file_put_contents('downloads/hash/raw.txt', $hash . "\r\n", FILE_APPEND);
-}
+file_put_contents('downloads/hash/raw.txt', $hash . "\r\n", FILE_APPEND);
 
 header('Location: /index.php?hash=' . $hash);
 

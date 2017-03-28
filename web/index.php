@@ -48,7 +48,7 @@ if (isset($_GET['error'])) {
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
         <?php include_once("analyticstracking.php") ?>
-        
+
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -65,13 +65,19 @@ if (isset($_GET['error'])) {
                                     <a class="nav-link active" href="#" onclick="ga('send', 'event', 'button', 'click','DOC_button');">MS Office</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','PDF_button');"></i></a>
+                                    <a class="nav-link disabled" href="#">
+                                        <i class="fa fa-file-pdf-o" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','PDF_button');"></i>
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/downloads"><i class="fa fa-download" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','Download_Button');"></i></a>
+                                    <a class="nav-link" href="/downloads">
+                                        <i class="fa fa-download" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','Download_Button');"></i>
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#HelpModal" onclick="ga('send', 'event', 'button', 'click','Help_Modal');"><i class="fa fa-question" aria-hidden="true"></i></a>
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#HelpModal" onclick="ga('send', 'event', 'button', 'click','Help_Modal');">
+                                        <i class="fa fa-question" aria-hidden="true"></i>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -120,7 +126,6 @@ if (isset($_GET['error'])) {
                             </div>
                         </div>
                     </div> <!-- Hash Modal END -->
-                    
                     <div class="modal fade bd-example-modal-lg" id="HelpModal" tabindex="-1" role="dialog" aria-labelledby="HelpModal" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">

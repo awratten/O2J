@@ -147,7 +147,7 @@ if (isset($_GET['error'])) {
         </div>
 
         <?php
-        if (isset($_GET['hash'])) {
+        if ($filter_hash) {
             echo "<script type = 'text/javascript'>";
             echo "$(document) . ready(function () {";
             echo "$('#HashModal') . modal('show');";

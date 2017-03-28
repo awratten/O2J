@@ -76,7 +76,7 @@ if (isset($_GET['hash'])) {
                                 </div>
                                 <div class="form-group mb30">
 
-                                    <label id="file-label" class="custom-file">
+                                    <label id="file-label" class="custom-file text-left">
                                         <input type="file" id="upload" name="upload" class="custom-file-input" accept=".pdf, .doc, .docx ,application/msword, .xls, .xlsx, application/vnd.ms-excel, .ppt , .pptx, application/vnd.ms-powerpoint" required="true">
                                         <span class="custom-file-control"></span>
                                     </label>

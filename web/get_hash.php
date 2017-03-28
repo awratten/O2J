@@ -15,7 +15,9 @@ $uploadfile = $uploaddir . $filename;
 $ext = pathinfo($filename, PATHINFO_EXTENSION);
 
 if (!in_array($ext, $ext_type)) {
-    header('Location: /index.php?error=' . 'Error: unsupported filetype');
+    echo "Error: unsupported filetype<br>";
+    echo var_dump($_FILES);
+   // header('Location: /index.php?error=' . 'Error: unsupported filetype');
 }
 
 if (!is_file($uploadfile)) {
@@ -45,7 +47,7 @@ header('Location: /index.php?hash=' . $hash);
 
 } else {
     
-    var_dump($_FILES);
+    echo var_dump($_FILES);
     
 }
 

@@ -3,11 +3,22 @@ $doc_title = "Office2John Online";
 $doc_version = "1";
 $filter_hash = "";
 $error = "";
-/*
 
+/* Office2John.online
+ * 
+ * Version 0.4 Beta
+ * 
+ * Created by Anthony Wratten
+ * 29th March 2017
+ * 
+ * PHP5 , Apache2 , Bootstrap 4 , clipboard.js
+ * 
+ * TODO: 
+ *  - Add MySQL database
+ *  - Better looking Download Section
+ *  - PDF Support Section
  */
 ?>
-
 <?php
 if (isset($_GET['hash'])) {
     $filter_hash = filter_input(INPUT_GET, 'hash', FILTER_SANITIZE_STRING);
@@ -16,7 +27,6 @@ if (isset($_GET['error'])) {
     $error = filter_input(INPUT_GET, 'error', FILTER_SANITIZE_STRING);
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -42,13 +52,8 @@ if (isset($_GET['error'])) {
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
     </head>
-
     <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
-        
-        
-
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
@@ -96,7 +101,6 @@ if (isset($_GET['error'])) {
                             </form>
                         </div>
                     </div>
-
                     <div class="modal fade bd-example-modal-lg" id="HashModal" tabindex="-1" role="dialog" aria-labelledby="HashModal" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
@@ -115,7 +119,7 @@ if (isset($_GET['error'])) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- Hash Modal END -->
                     
                     <div class="modal fade bd-example-modal-lg" id="HelpModal" tabindex="-1" role="dialog" aria-labelledby="HelpModal" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
@@ -128,17 +132,16 @@ if (isset($_GET['error'])) {
                                 </div>
                                 <div class="modal-body">
                                     <p>
-                                    Office2John.online extract the cryptographic
-                                    hash from Microsoft Office Files. The
-                                    extracted hash is ready to be inserted into
-                                    password cracking tools such as Hashcat or
-                                    John the Ripper.
+                                    <strong>Office2John.online</strong> extracts
+                                    the cryptographic hash from Microsoft Office
+                                    Files. The extracted hash is ready to be 
+                                    inserted into password cracking tools such 
+                                    as Hashcat or John the Ripper.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <p class="text-center" style="color:#fff;margin-top: 30px">
                         Copyright ©
                         <span id="year"> 2017</span>
@@ -147,8 +150,7 @@ if (isset($_GET['error'])) {
                 </div>
             </div>
         </div>
-
-        <?php
+        <?php 
         if ($filter_hash) {
             echo "<script type = 'text/javascript'>";
             echo "$(document) . ready(function () {";
@@ -157,9 +159,7 @@ if (isset($_GET['error'])) {
             echo "</script>";
         }
         ?>
-        
         <script src="js/clipboard.min.js" type="text/javascript"></script>
-        
         <script>
             var clipboard = new Clipboard('.btn');
             clipboard.on('success', function (e) {
@@ -169,7 +169,5 @@ if (isset($_GET['error'])) {
                 console.log(e);
             });
         </script>
-
-        
     </body>
 </html>

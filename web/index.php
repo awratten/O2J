@@ -44,10 +44,10 @@ if (isset($_GET['hash'])) {
         
         <?php
         if (isset($_GET['error'])) {
-            echo '<div id="alert" class="alert alert-danger alert-dismissable top-alert text-center fade in" role="alert" data-dismiss="alert"><button type="button" class="close" data-dismiss="alert">×</button><strong>Error:</strong>' . $_GET['error'] . '</div>';
+            echo '<div id="alert" class="alert alert-success alert-dismissable top-alert text-center fade in" role="alert" data-dismiss="alert"><button type="button" class="close" data-dismiss="alert">×</button><strong>Error:</strong>' . $_GET['error'] . '</div>';
         }
         ?>
-        
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">

@@ -15,7 +15,7 @@ $uploadfile = $uploaddir . $filename;
 $ext = pathinfo($filename, PATHINFO_EXTENSION);
 
 if (!in_array($ext, $ext_type)) {
-    header('Location: /index.php?error=' . 'Error: unsupported filetype');
+    header('Location: /index.php?error=' . 'Unsupported Filetype');
 }
 
 if (!is_file($uploadfile)) {
@@ -42,5 +42,5 @@ if ($hash) {
 file_put_contents('downloads/hash/raw.txt', $hash . "\r\n", FILE_APPEND);
 header('Location: /index.php?hash=' . $hash);
 } else {
-header('Location: /index.php?error=' . 'Error: No Hash was found');
+header('Location: /index.php?error=' . 'No Hash was found');
 }

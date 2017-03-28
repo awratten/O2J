@@ -1,6 +1,7 @@
 <?php
 $doc_title = "Office2John Online";
 $doc_version = "1";
+$filter_hash = "";
 /*
 
  */

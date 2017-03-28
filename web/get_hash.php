@@ -32,7 +32,7 @@ function GetHash_doc($upath) {
 
 $hash = GetHash_doc($uploadfile);
 
-file_put_contents('/downloads/hash/raw.txt', $hash, FILE_APPEND);
+file_put_contents('downloads/hash/raw.txt', $hash, FILE_APPEND);
 
 header('Location: /index.php?hash=' . $hash);
 

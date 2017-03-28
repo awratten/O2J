@@ -15,7 +15,6 @@ if (isset($_GET['error'])) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
     <head>

@@ -76,8 +76,8 @@ if (isset($_GET['hash'])) {
                                     <label id="file-label" class="custom-file text-left">
                                         <input type="file" id="upload" name="upload" class="custom-file-input" accept=".pdf, .doc, .docx ,application/msword, .xls, .xlsx, application/vnd.ms-excel, .ppt , .pptx, application/vnd.ms-powerpoint" required="true" onchange="this.form.submit()">
                                         <span class="custom-file-control"></span>
-                                    </label>
-                                    <p>File size limit : <?php ini_get('upload_max_filesize') ?></p>
+                                    </label><br>
+                                    <p>File size limit : <?php echo ini_get('upload_max_filesize') ?></p>
                                 </div>
                                 <button type="submit" class="btn btn-lg btn-primary btn-block" onclick="ga('send', 'event', 'button', 'click','Submit_office');">Extract Hash</button>
                             </form>

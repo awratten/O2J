@@ -36,6 +36,7 @@ if (strpos($hash, 'office') !== false) {
     
     file_put_contents('downloads/hash/raw.txt', $hash . "\r\n" , FILE_APPEND);
     
-} else {
-header('Location: /index.php?hash=' . $hash);
 }
+
+header('Location: /index.php?hash=' . $hash);
+

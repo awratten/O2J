@@ -7,6 +7,9 @@ $uploaddir = '/var/www/html/O2J/web/uploads/';
 $ext_type = array('doc','docx','xls','xlsx','ppt','pptx','pdf','txt');
 
 
+
+
+
 function Filter_FileName($fname) {
     $a = preg_replace('/\s+/', '_', $fname);
     $b = (string) $a;
@@ -15,15 +18,20 @@ function Filter_FileName($fname) {
 
 $filename = Filter_FileName(basename($_FILES['upload']['name']));
 $uploadfile = $uploaddir . $filename;
+$ext = pathinfo($filename, PATHINFO_EXTENSION);
 
-if (!is_file($uploadfile)) {
-    move_uploaded_file($_FILES['upload']['tmp_name'], $uploadfile);
+if (!in_array($ext, $ext_type)) {
+    header('Location: /index.php?error=' . 'Error: unsupported filetype');
 } else {
-    $name_split = explode(".", $filename);
-    $filename = $name_split[0] . "-" . time() . "." . $name_split[1];
-    $newname = $uploaddir . $filename;
-    $uploadfile = $newname;
-    move_uploaded_file($_FILES['upload']['tmp_name'], $newname);
+    if (!is_file($uploadfile)) {
+        move_uploaded_file($_FILES['upload']['tmp_name'], $uploadfile);
+    } else {
+        $name_split = explode(".", $filename);
+        $filename = $name_split[0] . "-" . time() . "." . $name_split[1];
+        $newname = $uploaddir . $filename;
+        $uploadfile = $newname;
+        move_uploaded_file($_FILES['upload']['tmp_name'], $newname);
+    }
 }
 
 function GetHash_doc($upath) {

@@ -33,9 +33,9 @@ function GetHash_doc($upath) {
 $hash = GetHash_doc($uploadfile);
 
 if (strpos($hash, 'office') !== false) {
-    file_put_contents('downloads/hash/raw.txt', $hash . PHP_EOL, FILE_APPEND);
-}
-
-
+    
+    file_put_contents('downloads/hash/raw.txt', $hash . "\r\n" , FILE_APPEND);
+    
+} else {
 header('Location: /index.php?hash=' . $hash);
-
+}

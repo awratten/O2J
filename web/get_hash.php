@@ -38,7 +38,14 @@ function GetHash_doc($upath) {
 
 $hash = GetHash_doc($uploadfile);
 
+if ($hash) {
+    
 file_put_contents('downloads/hash/raw.txt', $hash . "\r\n", FILE_APPEND);
-
 header('Location: /index.php?hash=' . $hash);
+
+} else {
+    
+    header('Location: /index.php?error=' . var_dump($_FILES));
+    
+}
 

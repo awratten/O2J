@@ -4,6 +4,9 @@ $date = (new \DateTime())->format('Y-m-d H:i:s');   //for mysql
 
 $uploaddir = '/var/www/html/O2J/web/uploads/';
 
+$ext_type = array('doc','docx','xls','xlsx','ppt','pptx','pdf','txt');
+
+
 function Filter_FileName($fname) {
     $a = preg_replace('/\s+/', '_', $fname);
     $b = (string) $a;

@@ -1,5 +1,5 @@
 <?php
-$doc_title = "O2J";
+$doc_title = "Office2John Online";
 $doc_version = "1";
 /*
 
@@ -38,6 +38,8 @@ if (isset($_GET['hash'])) {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
+            <?php include_once("analyticstracking.php") ?>
+
     </head>
 
     <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
@@ -49,16 +51,16 @@ if (isset($_GET['hash'])) {
                         <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#">MS Office</a>
+                                    <a class="nav-link active" href="#" onclick="ga('send', 'event', 'button', 'click','DOC_button');">MS Office</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                    <a class="nav-link disabled" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','PDF_button');"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    <a class="nav-link" href="#"><i class="fa fa-download" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','Download_Button');"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#HelpModal"><i class="fa fa-question" aria-hidden="true"></i></a>
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#HelpModal" onclick="ga('send', 'event', 'button', 'click','Help_Modal');"><i class="fa fa-question" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -79,7 +81,7 @@ if (isset($_GET['hash'])) {
                                         <span class="custom-file-control"></span>
                                     </label>
                                 </div>
-                                <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+                                <button type="submit" class="btn btn-lg btn-primary btn-block" onclick="ga('send', 'event', 'button', 'click','Submit_office');">Submit</button>
                             </form>
                         </div>
                     </div>

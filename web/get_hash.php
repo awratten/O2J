@@ -45,7 +45,7 @@ header('Location: /index.php?hash=' . $hash);
 
 } else {
     
-    header('Location: /index.php?error=' . var_dump($_FILES));
+    var_dump($_FILES);
     
 }
 

@@ -1,14 +1,8 @@
 <?php
 
 $date = (new \DateTime())->format('Y-m-d H:i:s');   //for mysql
-
 $uploaddir = '/var/www/html/O2J/web/uploads/';
-
-$ext_type = array('doc','docx','xls','xlsx','ppt','pptx','pdf','txt');
-
-
-
-
+$ext_type = array('doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'pdf', 'txt');
 
 function Filter_FileName($fname) {
     $a = preg_replace('/\s+/', '_', $fname);
@@ -22,16 +16,16 @@ $ext = pathinfo($filename, PATHINFO_EXTENSION);
 
 if (!in_array($ext, $ext_type)) {
     header('Location: /index.php?error=' . 'Error: unsupported filetype');
+}
+
+if (!is_file($uploadfile)) {
+    move_uploaded_file($_FILES['upload']['tmp_name'], $uploadfile);
 } else {
-    if (!is_file($uploadfile)) {
-        move_uploaded_file($_FILES['upload']['tmp_name'], $uploadfile);
-    } else {
-        $name_split = explode(".", $filename);
-        $filename = $name_split[0] . "-" . time() . "." . $name_split[1];
-        $newname = $uploaddir . $filename;
-        $uploadfile = $newname;
-        move_uploaded_file($_FILES['upload']['tmp_name'], $newname);
-    }
+    $name_split = explode(".", $filename);
+    $filename = $name_split[0] . "-" . time() . "." . $name_split[1];
+    $newname = $uploaddir . $filename;
+    $uploadfile = $newname;
+    move_uploaded_file($_FILES['upload']['tmp_name'], $newname);
 }
 
 function GetHash_doc($upath) {
@@ -44,9 +38,8 @@ function GetHash_doc($upath) {
 $hash = GetHash_doc($uploadfile);
 
 if (strpos($hash, 'office') !== false) {
-    
-    file_put_contents('downloads/hash/raw.txt', $hash . "\r\n" , FILE_APPEND);
-    
+
+    file_put_contents('downloads/hash/raw.txt', $hash . "\r\n", FILE_APPEND);
 }
 
 header('Location: /index.php?hash=' . $hash);

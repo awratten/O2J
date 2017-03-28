@@ -10,7 +10,11 @@ $doc_version = "1";
 if (isset($_GET['hash'])) {
     $filter_hash = filter_input(INPUT_GET, 'hash', FILTER_SANITIZE_STRING);
 }
+if (isset($_GET['error'])) {
+    $error = filter_input(INPUT_GET, 'error', FILTER_SANITIZE_STRING);
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -71,8 +75,8 @@ if (isset($_GET['hash'])) {
                                     <h4>Choose file to extract hash</h4>
                                 </div>
                                 <?php
-                                if (isset($_GET['error'])) {
-                                    echo "<div class='form-group'> <strong>Error:</strong>" . $_GET['error'] . "</div>";
+                                if ($error) {
+                                    echo "<div class='form-group'> <strong>Error:</strong>" . $error . "</div>";
                                 }
                                 ?>
                                 <div class="form-group mb30">

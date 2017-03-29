@@ -64,21 +64,21 @@ if (isset($_GET['error'])) {
                         <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#" onclick="ga('send', 'event', 'button', 'click','DOC_button');">MS Office</a>
+                                    <h4><a class="nav-link active" href="#" onclick="ga('send', 'event', 'button', 'click','DOC_button');">MS Office</a></h4>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link disabled" href="#">
-                                        <i class="fa fa-file-pdf-o" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','PDF_button');"></i>
+                                        <h4><i class="fa fa-file-pdf-o" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','PDF_button');"></i></h4>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#" data-toggle="modal" data-target="#DownloadModal" onclick="ga('send', 'event', 'button', 'click','Download_Button');">
-                                        <i class="fa fa-download" aria-hidden="true"></i>
+                                        <h4><i class="fa fa-download" aria-hidden="true"></i></h4>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#" data-toggle="modal" data-target="#HelpModal" onclick="ga('send', 'event', 'button', 'click','Help_Modal');">
-                                        <i class="fa fa-question" aria-hidden="true"></i>
+                                        <h4><i class="fa fa-question" aria-hidden="true"></i></h4>
                                     </a>
                                 </li>
                             </ul>

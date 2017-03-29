@@ -161,29 +161,29 @@ if (isset($_GET['error'])) {
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <ul class="nav">
+                                    <ul class="nav text-center">
                                         <li class="nav-item">
                                             <a class="nav-link active" href="downloads/O2J.txt">
-                                                <i class="fa fa-file-o"></i><br>
+                                                <i class="fa fa-file-o fa-3"></i><br>
                                                 O2J Wordlist
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="downloads/o2j.hcmask">
-                                                <i class="fa fa-file-o"></i><br>
+                                                <i class="fa fa-file-o fa-3"></i><br>
                                                 O2J Mask
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="downloads/hash/">
-                                                <i class="fa fa-file-pdf-o"></i><br>
+                                                <i class="fa fa-folder-open-o fa-3"></i><br>
                                                 Uncracked Hash
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             
                                             <a class="nav-link" href="downloads/Office_Hashcat_Tutorial.pdf" target="_BLANK">
-                                                <i class="fa fa-file-pdf-o"></i>
+                                                <i class="fa fa-file-pdf-o fa-3"></i>
                                                 <br>
                                                 Tutorial
                                             </a>

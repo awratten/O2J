@@ -146,6 +146,10 @@ if (isset($_GET['error'])) {
                                     inserted into password cracking tools such 
                                     as Hashcat or John the Ripper.
                                     </p>
+                                    <a class="nav-link text-center" href="downloads/Office_Hashcat_Tutorial.pdf" target="_BLANK">
+                                        <h3><i class="fa fa-file-pdf-o"></h3></i>
+                                        Tutorial
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -175,9 +179,9 @@ if (isset($_GET['error'])) {
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-center" href="downloads/hash/">
+                                            <a class="nav-link text-center" href="downloads/hash/" target="_BLANK">
                                                 <h3><i class="fa fa-folder-open-o"></i></h3>
-                                                Uncracked Hash
+                                                Uncracked Hashs
                                             </a>
                                         </li>
                                         <li class="nav-item">

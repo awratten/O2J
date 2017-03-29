@@ -109,7 +109,7 @@ if (isset($_GET['error'])) {
                             </form>
                         </div>
                     </div>
-                    <div class="modal fade bd-example-modal-lg" id="HashModal" tabindex="-1" role="dialog" aria-labelledby="HashModal" aria-hidden="true">
+                    <div class="modal fade" id="HashModal" tabindex="-1" role="dialog" aria-labelledby="HashModal" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -129,7 +129,7 @@ if (isset($_GET['error'])) {
                         </div>
                     </div> <!-- Hash Modal END -->
                     
-                    <div class="modal fade bd-example-modal-lg" id="HelpModal" tabindex="-1" role="dialog" aria-labelledby="HelpModal" aria-hidden="true">
+                    <div class="modal fade" id="HelpModal" tabindex="-1" role="dialog" aria-labelledby="HelpModal" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -155,8 +155,8 @@ if (isset($_GET['error'])) {
                         </div>
                     </div>
                     
-                    <div class="modal fade bd-example-modal-lg" id="DownloadModal" tabindex="-1" role="dialog" aria-labelledby="DownloadModal" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
+                    <div class="modal fade" id="DownloadModal" tabindex="-1" role="dialog" aria-labelledby="DownloadModal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h4 class="modal-title">Downloads</h4>

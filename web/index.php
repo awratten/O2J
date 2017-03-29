@@ -52,14 +52,17 @@ if (isset($_GET['error'])) {
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        
     </head>
     <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
+                    
                     <div id="logo">
-                    <a href="/index.php"><img class="logo-img" src="img/o2j_logo.svg" alt="Logo"></a>
+                        <a href="/index.php"><img class="logo-img" src="img/o2j_logo.svg" alt="Logo"></a>
                     </div>
+                    
                     <div class="card text-center">
                         <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs">
@@ -83,6 +86,7 @@ if (isset($_GET['error'])) {
                                 </li>
                             </ul>
                         </div>
+                        
                         <div class="card-block">
                             <form action="get_hash.php" method="post" enctype="multipart/form-data">
                                 <div class="form-group mb30">
@@ -109,6 +113,7 @@ if (isset($_GET['error'])) {
                             </form>
                         </div>
                     </div>
+                    
                     <div class="modal fade" id="HashModal" tabindex="-1" role="dialog" aria-labelledby="HashModal" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
@@ -195,8 +200,6 @@ if (isset($_GET['error'])) {
                             </div>
                         </div>
                     </div>
-                    
-                    
                     <p class="text-center" style="color:#fff;margin-top: 30px">
                         Copyright ©
                         <span id="year"> 2017</span>

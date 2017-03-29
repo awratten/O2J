@@ -125,7 +125,7 @@ if (isset($_GET['error'])) {
                                 </div>
                                 <div class="modal-body">
                                     <!-- Target -->
-                                    <textarea id="hashTextArea" style="width:100%;"><?php echo $filter_hash; ?></textarea>
+                                    <textarea id="hashTextArea" rows="4" style="width:100%;"><?php echo $filter_hash; ?></textarea>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-primary" data-clipboard-target="#hashTextArea">Copy</button>

@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /lib/
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
+Disallow: /favicon/
+Disallow: /uploads/
+Disallow: /admin/
+Disallow: /user/password.txt

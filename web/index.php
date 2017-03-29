@@ -72,7 +72,7 @@ if (isset($_GET['error'])) {
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#" data-target="#DownloadModal" onclick="ga('send', 'event', 'button', 'click','Download_Button');">
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#DownloadModal" onclick="ga('send', 'event', 'button', 'click','Download_Button');">
                                         <i class="fa fa-download" aria-hidden="true"></i>
                                     </a>
                                 </li>
@@ -128,6 +128,7 @@ if (isset($_GET['error'])) {
                             </div>
                         </div>
                     </div> <!-- Hash Modal END -->
+                    
                     <div class="modal fade bd-example-modal-lg" id="HelpModal" tabindex="-1" role="dialog" aria-labelledby="HelpModal" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">

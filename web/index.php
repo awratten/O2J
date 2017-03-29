@@ -172,25 +172,25 @@ if (isset($_GET['error'])) {
                                 <div class="modal-body">
                                     <ul class="nav justify-content-center">
                                         <li class="nav-item">
-                                            <a class="nav-link text-center" href="downloads/O2J.txt" download>
+                                            <a class="nav-link text-center" href="downloads/O2J.txt" download onclick="ga('send', 'event', 'button', 'click','Down_O2J.txt');">
                                                 <h3><i class="fa fa-file-o"></i></h3>
                                                 O2J Wordlist
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-center" href="downloads/o2j.hcmask" download>
+                                            <a class="nav-link text-center" href="downloads/o2j.hcmask" download onclick="ga('send', 'event', 'button', 'click','Down_O2J.mask');">
                                                 <h3><i class="fa fa-file-o"></i></h3>
                                                 O2J Mask
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-center" href="downloads/hash/" target="_BLANK">
+                                            <a class="nav-link text-center" href="downloads/hash/" target="_BLANK" onclick="ga('send', 'event', 'button', 'click','Show_Hash_Dir');">
                                                 <h3><i class="fa fa-folder-open-o"></i></h3>
                                                 Uncracked Hashs
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-center" href="downloads/Office_Hashcat_Tutorial.pdf" target="_BLANK">
+                                            <a class="nav-link text-center" href="downloads/Office_Hashcat_Tutorial.pdf" target="_BLANK" onclick="ga('send', 'event', 'button', 'click','Down_TUT.pdf');">
                                                 <h3><i class="fa fa-file-pdf-o"></h3></i>
                                                 Tutorial
                                             </a>

@@ -161,7 +161,7 @@ if (isset($_GET['error'])) {
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <ul class="nav text-center">
+                                    <ul class="nav justify-content-center">
                                         <li class="nav-item">
                                             <a class="nav-link active" href="downloads/O2J.txt">
                                                 <i class="fa fa-file-o fa-3"></i><br>

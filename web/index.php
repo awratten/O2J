@@ -57,7 +57,9 @@ if (isset($_GET['error'])) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
+                    <div id="logo">
                     <a href="/index.php"><img class="logo-img" src="img/o2j_logo.svg" alt="Logo"></a>
+                    </div>
                     <div class="card text-center">
                         <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs">
@@ -70,8 +72,8 @@ if (isset($_GET['error'])) {
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/downloads">
-                                        <i class="fa fa-download" aria-hidden="true" onclick="ga('send', 'event', 'button', 'click','Download_Button');"></i>
+                                    <a class="nav-link" href="#" data-target="#DownloadModal" onclick="ga('send', 'event', 'button', 'click','Download_Button');">
+                                        <i class="fa fa-download" aria-hidden="true"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -147,6 +149,37 @@ if (isset($_GET['error'])) {
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="modal fade bd-example-modal-lg" id="DownloadModal" tabindex="-1" role="dialog" aria-labelledby="DownloadModal" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Downloads</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item justify-content-between">
+                                            Wordlist
+                                            <span class="badge badge-default badge-pill">O2J.txt</span>
+                                        </li>
+                                        <li class="list-group-item justify-content-between">
+                                            Hashcat Mask
+                                            <span class="badge badge-default badge-pill">O2J.hcmask</span>
+                                        </li>
+                                        <li class="list-group-item justify-content-between">
+                                            Uncracked Hashs
+                                            <span class="badge badge-default badge-pill">1</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                     <p class="text-center" style="color:#fff;margin-top: 30px">
                         Copyright ©
                         <span id="year"> 2017</span>

@@ -163,27 +163,26 @@ if (isset($_GET['error'])) {
                                 <div class="modal-body">
                                     <ul class="nav justify-content-center">
                                         <li class="nav-item">
-                                            <a class="nav-link active" href="downloads/O2J.txt">
-                                                <i class="fa fa-file-o fa-3"></i><br>
+                                            <a class="nav-link text-center" href="downloads/O2J.txt">
+                                                <h3><i class="fa fa-file-o"></i></h3><br>
                                                 O2J Wordlist
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="downloads/o2j.hcmask">
-                                                <i class="fa fa-file-o fa-3"></i><br>
+                                            <a class="nav-link text-center" href="downloads/o2j.hcmask">
+                                                <h3><i class="fa fa-file-o"></i></h3><br>
                                                 O2J Mask
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="downloads/hash/">
-                                                <i class="fa fa-folder-open-o fa-3"></i><br>
+                                            <a class="nav-link text-center" href="downloads/hash/">
+                                                <h3><i class="fa fa-folder-open-o"></i></h3><br>
                                                 Uncracked Hash
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            
-                                            <a class="nav-link" href="downloads/Office_Hashcat_Tutorial.pdf" target="_BLANK">
-                                                <i class="fa fa-file-pdf-o fa-3"></i>
+                                            <a class="nav-link text-center" href="downloads/Office_Hashcat_Tutorial.pdf" target="_BLANK">
+                                                <h3><i class="fa fa-file-pdf-o"></h3></i>
                                                 <br>
                                                 Tutorial
                                             </a>

@@ -161,18 +161,32 @@ if (isset($_GET['error'])) {
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item justify-content-between">
-                                            Wordlist
-                                            <span class="badge badge-default badge-pill">O2J.txt</span>
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="downloads/O2J.txt">
+                                                <i class="fa fa-file-o"></i><br>
+                                                O2J Wordlist
+                                            </a>
                                         </li>
-                                        <li class="list-group-item justify-content-between">
-                                            Hashcat Mask
-                                            <span class="badge badge-default badge-pill">O2J.hcmask</span>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="downloads/o2j.hcmask">
+                                                <i class="fa fa-file-o"></i><br>
+                                                O2J Mask
+                                            </a>
                                         </li>
-                                        <li class="list-group-item justify-content-between">
-                                            Uncracked Hashs
-                                            <span class="badge badge-default badge-pill">1</span>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="downloads/hash/">
+                                                <i class="fa fa-file-pdf-o"></i><br>
+                                                Uncracked Hash
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            
+                                            <a class="nav-link" href="downloads/Office_Hashcat_Tutorial.pdf" target="_BLANK">
+                                                <i class="fa fa-file-pdf-o"></i>
+                                                <br>
+                                                Tutorial
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>

@@ -25,11 +25,11 @@ $doc_title = "Admin Login";
                                 <form name="loginform" id="loginform" action="admin.php" method="post">
                                     <p>
                                         <label for="user_login">Username<br>
-                                            <input type="text" name="log" id="user_login" class="form-control" value="" size="20" autocomplete="on"></label>
+                                            <input type="text" name="log" id="user_login" class="form-control" value="" autocomplete="on"></label>
                                     </p>
                                     <p>
                                         <label for="user_pass">Password<br>
-                                            <input type="password" name="pwd" id="user_pass" class="form-control" value="" size="20" style="cursor: auto;" autocomplete="on"></label>
+                                            <input type="password" name="pwd" id="user_pass" class="form-control" value="" style="cursor: auto;" autocomplete="on"></label>
                                     </p>
                                     <p class="submit">
                                         <input type="submit" name="submit" id="submit" class="btn btn-primary btn-lg" value="Log In">

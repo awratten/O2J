@@ -24,14 +24,13 @@ $doc_title = "Admin Login";
                             <div class="form-group">
                                 <form>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Username</label>
+                                        <label for="username">Username</label>
                                         <input type="text" class="form-control" id="username" placeholder="Username">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputPassword1">Password</label>
+                                        <label for="password">Password</label>
                                         <input type="password" class="form-control" id="password" placeholder="Password">
                                     </div>
-
                                     <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                                 </form>
                             </div>

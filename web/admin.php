@@ -24,11 +24,17 @@ $doc_title = "Admin Login";
                                 <h4>Login</h4>
                             </div>
                             <div class="form-group mb30">
-                                <form method="post" action='' name="login_form">
-                                    <p><input type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
-                                    <p><input type="password" class="span3" name="passwd" placeholder="Password"></p>
-                                    <p><button type="submit" class="btn btn-primary">Sign in</button>
-                                        <a href="#">Forgot Password?</a>
+                                <form name="loginform" id="loginform" action="admin.php" method="post">
+                                    <p>
+                                        <label for="user_login">Username or Email Address<br>
+                                            <input type="text" name="log" id="user_login" class="input" value="" size="20" autocomplete="off"></label>
+                                    </p>
+                                    <p>
+                                        <label for="user_pass">Password<br>
+                                            <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" style="cursor: auto;" autocomplete="off"></label>
+                                    </p>
+                                    <p class="submit">
+                                        <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-primary btn-large" value="Log In">
                                     </p>
                                 </form>
                             </div>
@@ -42,3 +48,4 @@ $doc_title = "Admin Login";
         </div>
     </body>
 </html>
+

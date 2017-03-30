@@ -200,11 +200,11 @@ if (isset($_GET['error'])) {
                             </div>
                         </div>
                     </div>
-                    <p class="text-center" style="color:#fff;margin-top: 30px">
-                        Copyright ©
-                        <span id="year"> 2017</span>
-                        <span><?php include_once('btn-btc.php'); ?></span>
-                    </p>
+                    <div class="text-center" style=";margin-top: 30px">
+                       <!-- Copyright ©
+                        <span id="year"> 2017</span> -->
+                        <?php include_once('btn-btc.php'); ?>
+                    </div>
                 </div>
             </div>
         </div>

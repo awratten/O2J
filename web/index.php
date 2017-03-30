@@ -200,7 +200,7 @@ if (isset($_GET['error'])) {
                             </div>
                         </div>
                     </div>
-                    <div class="text-center" style=";margin-top: 30px">
+                    <div class="text-center" style="color:white;margin-top: 30px">
                         Help keep this site free. Donate BTC:
                        <span>18axSD6K5mwy9uwvRc9zuiiFZxnkGAWK4</span>
 

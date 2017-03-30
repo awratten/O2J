@@ -18,29 +18,23 @@ $doc_title = "Admin Login";
                 <div class="col-lg-6 mx-auto">
                     <div class="card text-center">
                         <div class="card-header">
-
+                            <h4>Login</h4>
                         </div>
                         <div class="card-block">
                             <div class="form-group mb30">
-                                <h4>Login</h4>
-                            </div>
-                            <div class="form-group mb30">
                                 <form name="loginform" id="loginform" action="admin.php" method="post">
                                     <p>
-                                        <label for="user_login">Username or Email Address<br>
-                                            <input type="text" name="log" id="user_login" class="input" value="" size="20" autocomplete="off"></label>
+                                        <label for="user_login">Username<br>
+                                            <input type="text" name="log" id="user_login" class="form-control" value="" size="20" autocomplete="off"></label>
                                     </p>
                                     <p>
                                         <label for="user_pass">Password<br>
-                                            <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" style="cursor: auto;" autocomplete="off"></label>
+                                            <input type="password" name="pwd" id="user_pass" class="form-control" value="" size="20" style="cursor: auto;" autocomplete="off"></label>
                                     </p>
                                     <p class="submit">
                                         <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-primary btn-large" value="Log In">
                                     </p>
                                 </form>
-                            </div>
-                            <div class="form-group mb30">
-
                             </div>
                         </div>
                     </div>

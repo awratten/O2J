@@ -203,7 +203,7 @@ if (isset($_GET['error'])) {
                     <p class="text-center" style="color:#fff;margin-top: 30px">
                         Copyright ©
                         <span id="year"> 2017</span>
-                        <span></span>
+                        <span><?php include_once('btn-btc.php'); ?></span>
                     </p>
                 </div>
             </div>

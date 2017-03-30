@@ -12,27 +12,27 @@ $doc_title = "Admin Login";
 <html>
     <?php include_once('include/head.php'); ?>
     <body>
-    <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
+    <body class="bg-primary" style="overflow-x: hidden; margin-top: 200px;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mx-auto">
+                <div class="col-lg-4 mx-auto">
                     <div class="card text-center">
                         <div class="card-header">
                             <h4>Login</h4>
                         </div>
                         <div class="card-block">
-                            <div class="form-group mb30">
+                            <div class="form-group">
                                 <form name="loginform" id="loginform" action="admin.php" method="post">
                                     <p>
                                         <label for="user_login">Username<br>
-                                            <input type="text" name="log" id="user_login" class="form-control" value="" size="20" autocomplete="off"></label>
+                                            <input type="text" name="log" id="user_login" class="form-control" value="" size="20" autocomplete="on"></label>
                                     </p>
                                     <p>
                                         <label for="user_pass">Password<br>
-                                            <input type="password" name="pwd" id="user_pass" class="form-control" value="" size="20" style="cursor: auto;" autocomplete="off"></label>
+                                            <input type="password" name="pwd" id="user_pass" class="form-control" value="" size="20" style="cursor: auto;" autocomplete="on"></label>
                                     </p>
                                     <p class="submit">
-                                        <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-primary btn-large" value="Log In">
+                                        <input type="submit" name="submit" id="submit" class="btn btn-primary btn-lg" value="Log In">
                                     </p>
                                 </form>
                             </div>

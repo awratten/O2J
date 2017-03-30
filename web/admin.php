@@ -15,8 +15,8 @@ $doc_title = "Admin Login";
     <body class="bg-primary" style="overflow-x: hidden; margin-top: 200px;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mx-auto">
-                    <div class="card text-center">
+                <div class="col-md-4 mx-auto">
+                    <div class="card">
                         <div class="card-header">
                             <h4>Login</h4>
                         </div>

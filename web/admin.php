@@ -22,18 +22,17 @@ $doc_title = "Admin Login";
                         </div>
                         <div class="card-block">
                             <div class="form-group">
-                                <form name="loginform" id="loginform" action="admin.php" method="post">
-                                    <div class="form-group">        
-                                        <label for="user_login">Username<br>
-                                            <input type="text" name="log" id="user_login" class="form-control" value="" autocomplete="on"></label>
-                                    </div>  
-                                    <div class="form-group">        
-                                        <label for="user_pass">Password<br>
-                                            <input type="password" name="pwd" id="user_pass" class="form-control" value="" style="cursor: auto;" autocomplete="on"></label>
-                                    </div>  
-                                    <div class="form-group">        
-                                        <input type="submit" name="submit" id="submit" class="btn btn-primary btn-lg" value="Log In">
-                                    </div>        
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Username</label>
+                                        <input type="text" class="form-control" id="username" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                                 </form>
                             </div>
                         </div>

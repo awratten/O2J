@@ -8,8 +8,9 @@
 session_start();
 $doc_title = "Admin Login";
 ?>
+
 <html>
-    <?php file_get_contents('include/head.php'); ?>
+    <?php echo file_get_contents('include/head.php'); ?>
     <body>
     <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
         <div class="container">

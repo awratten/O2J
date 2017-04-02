@@ -52,8 +52,7 @@ if (isset($_GET['error'])) {
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        
-    </head>
+    </head> <!-- Head Section END -->
     <body class="bg-primary" style="overflow-x: hidden; margin-top: 50px;">
         <div class="container">
             <div class="row">
@@ -61,7 +60,7 @@ if (isset($_GET['error'])) {
                     
                     <div id="logo">
                         <a href="/index.php"><img class="logo-img" src="img/o2j_logo.svg" alt="Logo"></a>
-                    </div>
+                    </div> <!-- Logo Section END -->
                     
                     <div class="card text-center">
                         <div class="card-header">
@@ -85,7 +84,7 @@ if (isset($_GET['error'])) {
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> <!-- Top Nav END -->
                         
                         <div class="card-block">
                             <form action="get_hash.php" method="post" enctype="multipart/form-data">
@@ -158,7 +157,7 @@ if (isset($_GET['error'])) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- Help Modal END -->
                     
                     <div class="modal fade" id="DownloadModal" tabindex="-1" role="dialog" aria-labelledby="DownloadModal" aria-hidden="true">
                         <div class="modal-dialog modal-md">
@@ -199,16 +198,16 @@ if (isset($_GET['error'])) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- Download Modal END -->
+                    
                     <div class="text-center" style="color:white;margin-top: 30px">
                         Help keep this site free. Donate BTC:
                        <span>18axSD6K5mwy9uwvRc9zuiiFZxnkGAWK4</span>
-
-	
-                    </div>
+                    </div> <!-- Donate Section END -->
                 </div>
             </div>
         </div>
+        
         <?php 
         if ($filter_hash) {
             echo "<script type = 'text/javascript'>";
@@ -218,6 +217,7 @@ if (isset($_GET['error'])) {
             echo "</script>";
         }
         ?>
+        
         <script src="js/clipboard.min.js" type="text/javascript"></script>
         <script>
             var clipboard = new Clipboard('.btn');

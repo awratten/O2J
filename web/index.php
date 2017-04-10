@@ -75,7 +75,7 @@ if (isset($_GET['error'])) {
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#" data-toggle="modal" data-target="#DownloadModal" onclick="ga('send', 'event', 'button', 'click','Download_Button');">
-                                        <i class="fa fa-download" aria-hidden="true"></i>Downloads
+                                        <i class="fa fa-download" aria-hidden="true"></i>&nbsp;Downloads
                                     </a>
                                 </li>
                                 <li class="nav-item">

@@ -3,13 +3,13 @@
 $Width = 64;
 $Height = 64;
 
-$Image = imagecreatetruecolor($Width, $Height);
-$stamp = imagecreatefrompng('img/lock.png');
+$Image = ImageCreateTrueColor($Width, $Height);
+$Stamp = ImageCreateFromPNG('img/lock.png');
 
 $marge_right = 0;
 $marge_bottom = 0;
-$sx = imagesx($stamp);
-$sy = imagesy($stamp);
+$sx = ImageSX($Stamp);
+$sy = ImageSY($Stamp);
 
 for ($Row = 1; $Row <= $Height; $Row++) {
     for ($Column = 1; $Column <= $Width; $Column++) {
@@ -23,7 +23,9 @@ for ($Row = 1; $Row <= $Height; $Row++) {
 
 ImageFilter($Image, IMG_FILTER_GAUSSIAN_BLUR);
 
-ImageCopy($Image, $stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp));
+imagealphablending($Stamp,true);
 
-header('Content-type: image/png');
-imagepng($Image);
+ImageCopyMerge($Image, $Stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($Stamp), imagesy($Stamp),50);
+
+Header('Content-type: image/png');
+ImagePNG($Image);

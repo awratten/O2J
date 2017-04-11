@@ -127,6 +127,7 @@ if (isset($_GET['error'])) {
                                     <textarea id="hashTextArea" rows="4" style="width:100%;"><?php echo $filter_hash; ?></textarea>
                                 </div>
                                 <div class="modal-footer">
+                                    <a href="/get_batch.php?hash=<?php echo $filter_hash; ?>"><button type="button" class="btn btn-primary">Download Batch File</button></a>
                                     <button type="button" class="btn btn-primary" data-clipboard-target="#hashTextArea">Copy</button>
                                 </div>
                             </div>

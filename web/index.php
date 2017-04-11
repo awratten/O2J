@@ -127,6 +127,10 @@ if (isset($_GET['error'])) {
                                     <textarea id="hashTextArea" rows="4" style="width:100%;"><?php echo $filter_hash; ?></textarea>
                                 </div>
                                 <div class="modal-footer">
+                                    <a class="nav-link text-center" href="downloads/o2j.hcmask" download onclick="ga('send', 'event', 'button', 'click','Down_O2J.mask');">
+                                        <h3><i class="fa fa-file-o"></i></h3>
+                                        Download o2j.hcmask
+                                    </a>
                                     <a href="/get_batch.php?hash=<?php echo $filter_hash; ?>" onclick="ga('send', 'event', 'button', 'click','Download Batchfile');"><button type="button" class="btn btn-primary">Download Batch File</button></a>
                                     <button type="button" class="btn btn-primary" data-clipboard-target="#hashTextArea">Copy</button>
                                 </div>

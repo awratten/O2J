@@ -17,13 +17,11 @@ for ($Row = 1; $Row <= $Height; $Row++) {
         $Green = mt_rand(0, 255);
         $Blue = mt_rand(0, 255);
         $Colour = imagecolorallocate($Image, $Red, $Green, $Blue);
-        imagesetpixel($Image, $Column - 1, $Row - 1, $Colour);
+        ImageSetPixel($Image, $Column - 1, $Row - 1, $Colour);
     }
 }
 
-imagecopy($Image, $stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp));
+ImageCopyMerge($Image, $stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp),50);
 
 header('Content-type: image/png');
 imagepng($Image);
-
-

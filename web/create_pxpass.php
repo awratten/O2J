@@ -21,6 +21,8 @@ for ($Row = 1; $Row <= $Height; $Row++) {
     }
 }
 
+ImageFilter($Image, IMG_FILTER_GAUSSIAN_BLUR);
+
 ImageCopy($Image, $stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp));
 
 header('Content-type: image/png');

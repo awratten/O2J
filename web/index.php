@@ -208,7 +208,7 @@ if (isset($_GET['error'])) {
                     <div class="text-center" style="color:white;margin-top: 30px">
                         Help keep this site free. Donate BTC:
                         <span>18axSD6K5mwy9uwvRc9zuiiFZxnkGAWK4</span><br>
-                        <a href="downloads/hash/potfile.txt">Cracked Hash's - Updated 11/04/2017</a>
+                        <a href="downloads/hash/potfile.txt" style="color:white;">Cracked Hash's - Updated 11/04/2017</a>
                     </div> <!-- Donate Section END -->
                 </div>
             </div>

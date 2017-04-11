@@ -27,6 +27,14 @@ $doc_title = "Admin Login";
                                         <label for="username">Username</label>
                                         <input type="text" class="form-control" id="username" placeholder="Username">
                                     </div>
+                                    <div>
+                                        <?php
+                                        echo hash('sha256', 'The quick brown fox jumped over the lazy dog.');
+                                        echo "<br>";
+                                        echo hash_file('sha256', 'img/o2j_logo.svg');
+                                        ?>
+                                    </div>
+                                    
                                     <div class="form-group">
                                         <label for="password">Password</label>
                                         <input type="password" class="form-control" id="password" placeholder="Password">

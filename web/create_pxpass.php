@@ -6,8 +6,8 @@ $Height = 64;
 $Image = imagecreatetruecolor($Width, $Height);
 $stamp = imagecreatefrompng('img/lock.png');
 
-$marge_right = 16;
-$marge_bottom = 16;
+$marge_right = 0;
+$marge_bottom = 0;
 $sx = imagesx($stamp);
 $sy = imagesy($stamp);
 

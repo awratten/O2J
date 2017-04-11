@@ -1,5 +1,5 @@
 apt-get update
-apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt php5-curl git -y
+apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt php5-curl php5-gd git -y
 
 cd /var/www/html/
 

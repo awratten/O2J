@@ -23,11 +23,7 @@ for ($Row = 1; $Row <= $Height; $Row++) {
 
 ImageFilter($Image, IMG_FILTER_GAUSSIAN_BLUR);
 
-ImageAlphaBlending($Stamp, false);
-ImageSaveAlpha($Stamp, true);
-
-
-ImageCopyMerge($Image, $Stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($Stamp), imagesy($Stamp), 50);
+ImageCopy($Image, $Stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($Stamp), imagesy($Stamp));
 
 Header('Content-type: image/png');
 ImagePNG($Image);

@@ -21,7 +21,7 @@ for ($Row = 1; $Row <= $Height; $Row++) {
     }
 }
 
-ImageCopyMerge($Image, $stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp),50);
+ImageCopy($Image, $stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp));
 
 header('Content-type: image/png');
 imagepng($Image);

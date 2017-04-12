@@ -33,4 +33,4 @@ $filename = "img/pxpass.png";
 ImagePNG($Image, $filename);
 //ImagePNG($Image);
 
-echo hash_file('md5', $filename);
+echo hash_file('sha256', $filename);

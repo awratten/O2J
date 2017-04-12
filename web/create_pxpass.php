@@ -32,7 +32,8 @@ Header("Content-Disposition: attachment; filename=pxpass_".$username.".png");
 
 $filename = "img/pxpass_".$username.".png";
 
-//ImagePNG($Image, $filename);
-ImagePNG($Image);
+ImagePNG($Image, $filename);
+
 $hash = hash_file('sha256', $filename);
+
 exit;

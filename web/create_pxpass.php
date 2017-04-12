@@ -25,7 +25,9 @@ ImageFilter($Image, IMG_FILTER_GAUSSIAN_BLUR);
 
 ImageCopy($Image, $Stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($Stamp), imagesy($Stamp));
 
-Header('Content-type: image/png');
-Header("Content-Disposition: attachment; filename=pxpass.png");
+//Header('Content-type: image/png');
+//Header("Content-Disposition: attachment; filename=pxpass.png");
 
-ImagePNG($Image);
+//ImagePNG($Image);
+
+echo hash_file('md5', $Image);

@@ -30,10 +30,9 @@ ImageCopy($Image, $Stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) 
 //Header('Content-type: image/png');
 //Header("Content-Disposition: attachment; filename=pxpass.png");
 
-$filename = "img/pxpass.png";
+$filename = "img/pxpass_".$username.".png";
 
 ImagePNG($Image, $filename);
-
 
 //ImagePNG($Image);
 

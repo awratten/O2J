@@ -27,19 +27,12 @@ ImageFilter($Image, IMG_FILTER_GAUSSIAN_BLUR);
 
 ImageCopy($Image, $Stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($Stamp), imagesy($Stamp));
 
-//Header('Content-type: image/png');
-//Header("Content-Disposition: attachment; filename=pxpass.png");
+Header('Content-type: image/png');
+Header("Content-Disposition: attachment; filename=pxpass_".$username.".png");
 
 $filename = "img/pxpass_".$username.".png";
 
-ImagePNG($Image, $filename);
-
-//ImagePNG($Image);
-
-$hash = hash_file('sha256', $filename);
-
-echo "<html><body><center>";
-echo $username.":".$hash;
-echo "<br><img src=". $filename ."><br>::::";
+//ImagePNG($Image, $filename);
 ImagePNG($Image);
-echo "</center></body></html>";
+$hash = hash_file('sha256', $filename);
+exit;

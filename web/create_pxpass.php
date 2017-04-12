@@ -34,8 +34,10 @@ $hash = hash_file('sha256', $filename);
 
 $EXPORT = ImageCreateFromPNG($filename);
 
+unlink($filename);
+
 Header('Content-type: image/png');
-Header("Content-Disposition: attachment; filename=".$filename);
+Header("Content-Disposition: attachment; filename=pxpass.png");
 
 //ImagePNG($Image, $filename);
 ImagePNG($EXPORT);

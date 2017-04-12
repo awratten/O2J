@@ -25,21 +25,18 @@ for ($Row = 1; $Row <= $Height; $Row++) {
 }
 
 ImageFilter($Image, IMG_FILTER_GAUSSIAN_BLUR);
-
 ImageCopy($Image, $Stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($Stamp), imagesy($Stamp));
-
 ImagePNG($Image, $filename);
 
 $hash = hash_file('sha256', $filename);
 
 $EXPORT = ImageCreateFromPNG($filename);
 
-unlink($filename);
+//unlink($filename);    //delete file
 
 Header('Content-type: image/png');
 Header("Content-Disposition: attachment; filename=pxpass.png");
 
 //ImagePNG($Image, $filename);
 ImagePNG($EXPORT);
-
 exit;

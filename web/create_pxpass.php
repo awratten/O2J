@@ -36,7 +36,9 @@ ImagePNG($Image, $filename);
 
 //ImagePNG($Image);
 
-$hash = hash_file('sha256', $filename);
+//$hash = hash_file('sha256', $filename);
+
+$hash = hash('sha256', $Image);
 
 echo "<html><body><center>";
 echo $username.":".$hash;

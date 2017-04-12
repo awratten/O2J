@@ -1,6 +1,7 @@
 <?php
 
 $username = filter_input(INPUT_GET, 'username', FILTER_SANITIZE_STRING);
+$filename = "img/pxpass_".$username.".png";
 
 $Width = 64;
 $Height = 64;
@@ -27,17 +28,16 @@ ImageFilter($Image, IMG_FILTER_GAUSSIAN_BLUR);
 
 ImageCopy($Image, $Stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) - $sy - $marge_bottom, 0, 0, imagesx($Stamp), imagesy($Stamp));
 
-$save = ImagePNG($Image, $filename);
-
-Header('Content-type: image/png');
-Header("Content-Disposition: attachment; filename=pxpass_".$username.".png");
-
-$filename = "img/pxpass_".$username.".png";
-
-
-
-ImagePNG($Image);
+ImagePNG($Image, $filename);
 
 $hash = hash_file('sha256', $filename);
+
+$EXPORT = ImageCreateFromPNG($filename);
+
+Header('Content-type: image/png');
+Header("Content-Disposition: attachment; filename=".$filename);
+
+//ImagePNG($Image, $filename);
+ImagePNG($EXPORT);
 
 exit;

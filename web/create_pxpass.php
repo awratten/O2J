@@ -1,5 +1,7 @@
 <?php
 
+$username = filter_input(INPUT_GET, 'username', FILTER_SANITIZE_STRING);
+
 $Width = 64;
 $Height = 64;
 
@@ -31,9 +33,13 @@ ImageCopy($Image, $Stamp, imagesx($Image) - $sx - $marge_right, imagesy($Image) 
 $filename = "img/pxpass.png";
 
 ImagePNG($Image, $filename);
+
+
 //ImagePNG($Image);
 
+$hash = hash_file('sha256', $filename);
+
 echo "<html><body><center>";
-echo hash_file('sha256', $filename);
+echo $username.":".$hash;
 echo "<br><img src=". $filename .">";
 echo "</center></body></html>";

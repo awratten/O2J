@@ -32,6 +32,7 @@ $username = "admin";
                                         <input type="text" class="form-control" id="username" placeholder="Username">
                                     </div>
                                     <div class="form-group">
+                                        <img src="create_pxpass.php">
                                         <label for="password">Password</label>
                                         <input type="password" class="form-control" id="password" placeholder="Password">
                                     </div>

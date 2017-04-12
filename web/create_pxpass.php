@@ -33,7 +33,7 @@ $filename = "img/pxpass.png";
 ImagePNG($Image, $filename);
 //ImagePNG($Image);
 
-echo "<html><body>";
+echo "<html><body><center>";
 echo hash_file('sha256', $filename);
-echo "<img src=". $filename .">";
-echo "</body></html>";
+echo "<br><img src=". $filename .">";
+echo "</center></body></html>";

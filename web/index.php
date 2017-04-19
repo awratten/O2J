@@ -212,7 +212,7 @@ if (isset($_GET['error'])) {
                     <div class="text-center" style="color:white;margin-top: 30px">
                         <a href="downloads/hash/potfile.txt" target="_BLANK" style="color:white;" onclick="ga('send', 'event', 'button', 'click','POTFILE-11-04-17');">Cracked Hash's - Updated 11/04/2017</a>
                         <br>
-                        <div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
+                        <div style="font-size:16px;margin:0 auto;width:300px; background-color: white;" class="blockchain-btn"
                              data-address="18axSD6K5mwy9uwvRc9zuiiFZxnkGAWK4"
                              data-shared="false">
                             <div class="blockchain stage-begin">

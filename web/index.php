@@ -212,26 +212,7 @@ if (isset($_GET['error'])) {
                     <div class="text-center" style="color:white;margin-top: 30px">
                         <a href="downloads/hash/potfile.txt" target="_BLANK" style="color:white;" onclick="ga('send', 'event', 'button', 'click','POTFILE-11-04-17');">Cracked Hash's - Updated 11/04/2017</a>
                         <br>
-                        <div style="font-size:16px;margin:0 auto;width:300px; background-color: white;" class="blockchain-btn"
-                             data-address="18axSD6K5mwy9uwvRc9zuiiFZxnkGAWK4"
-                             data-shared="false">
-                            <div class="blockchain stage-begin">
-                                <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
-                            </div>
-                            <div class="blockchain stage-loading" style="text-align:center">
-                                <img src="https://blockchain.info/Resources/loading-large.gif"/>
-                            </div>
-                            <div class="blockchain stage-ready">
-                                <p align="center">Please Donate To Bitcoin Address: <b>[[address]]</b></p>
-                                <p align="center" class="qr-code"></p>
-                            </div>
-                            <div class="blockchain stage-paid">
-                                Donation of <b>[[value]] BTC</b> Received. Thank You.
-                            </div>
-                            <div class="blockchain stage-error">
-                                <font color="red">[[error]]</font>
-                            </div>
-                        </div>
+                        <p>BTC: 18axSD6K5mwy9uwvRc9zuiiFZxnkGAWK4</p>
                     </div> <!-- Donate Section END -->
                 </div>
             </div>

@@ -211,8 +211,8 @@ if (isset($_GET['error'])) {
 
                     <div class="text-center" style="color:white;margin-top: 30px">
                         <a href="downloads/hash/potfile.txt" target="_BLANK" style="color:white;" onclick="ga('send', 'event', 'button', 'click','POTFILE-11-04-17');">Cracked Hash's - Updated 11/04/2017</a>
-                        <br>
-                        <p>BTC: 18axSD6K5mwy9uwvRc9zuiiFZxnkGAWK4</p>
+                        <br>Please help keep this site free<br>
+                        <p>Donate BTC: 18axSD6K5mwy9uwvRc9zuiiFZxnkGAWK4</p>
                     </div> <!-- Donate Section END -->
                 </div>
             </div>

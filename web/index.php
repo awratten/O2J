@@ -204,15 +204,17 @@ if (isset($_GET['error'])) {
                             </div>
                         </div>
                     </div> <!-- Download Modal END -->
-
+                    
+                    <div class="text-center" style="margin-top: 30px;">
+                        <a href="https://www.genesis-mining.com/a/528485"><img src="https://www.genesis-mining.com/files/300x100/GM_LS-BIT-Banners_320x100px.gif"></a>
+                    </div> <!-- Advert Section END -->
+                    
                     <div class="text-center" style="color:white;margin-top: 30px;">
                         <a href="downloads/hash/potfile.txt" target="_BLANK" style="color:white;" onclick="ga('send', 'event', 'button', 'click','POTFILE-11-04-17');">Cracked Hash's - Updated 11/04/2017</a>
                         <br>Please help keep this site free<br>
                         <p>Donate BTC: 18axSD6K5mwy9uwvRc9zuiiFZxnkGAWK4</p>
                     </div> <!-- Donate Section END -->
-                    <div class="text-center" style="margin-top: 30px;">
-                        <a href="https://www.genesis-mining.com/a/528485"><img src="https://www.genesis-mining.com/files/300x100/GM_LS-BIT-Banners_320x100px.gif"></a>
-                    </div>
+                    
                 </div>
             </div>
         </div>

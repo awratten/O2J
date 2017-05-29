@@ -211,7 +211,7 @@ if (isset($_GET['error'])) {
                         <p>Donate BTC: 18axSD6K5mwy9uwvRc9zuiiFZxnkGAWK4</p>
                     </div> <!-- Donate Section END -->
                     <div class="text-center" style="margin-top: 30px;">
-                        <a href="https://www.genesis-mining.com/a/528485"><img src="https://www.genesis-mining.com/files/300x100/GM_LS-BIT-Banners_320x100px.gif></a>
+                        <a href="https://www.genesis-mining.com/a/528485"><img src="https://www.genesis-mining.com/files/300x100/GM_LS-BIT-Banners_320x100px.gif"></a>
                     </div>
                 </div>
             </div>
